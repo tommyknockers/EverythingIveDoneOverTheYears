@@ -1,0 +1,835 @@
+(:seq (:or destroy* disoy* crop* corp*) :* (:not (:or plantation* weather insect*)))
+(:seq (:or die* crop* corp*) :* (:or destroy* disoy*))
+(:seq because :* (:or destroy* disoy* crop* corp*))
+(:seq hard :* crop*)
+(:seq live* :* war* :* flood*)
+(:seq because :* (:or dry dried dead farm* (:seq better (:or life job))))
+(:seq hard :* (:or farm (:seq make :* money) (:seq being :* farmer)))
+(:seq consequences :* farm* problem*)
+(:seq los* :* (:or money farm))
+(:seq couldn* keep up with their crops)
+(:seq get away)
+(:seq (:or needed explore) :* (:or opportun* oppertun*))
+(:seq (:or from came moved) :* to chicago)
+
+ESCL2 means specific difficulties
+<!---->
+ESCL2.1 - Disease
+precision .91
+recall .99
+F1 .95
+(:seq can destroy crops* )
+  (:seq country they* )
+  (:seq farmers moved here to the united states* )disease* ireland* fungus* deseases* viruses* potato* 1845* killing*
+---
+Precision .95
+Recall .83
+F1 .88
+disease fungus diseases
+---
+Precision .93
+Recall .86
+F1 .89
+(:seq can destroy crops)
+(:seq country they)
+(:seq farmers moved here to the united states)
+disease
+ireland
+fungus
+deseases
+viruses
+potato
+1845
+killing
+
+<!---->
+ESCL2.2 - Insects
+precision: .98
+recall: .86
+F1 .91
+insects insect bugs
+---
+precision .98
+recall .86
+F1 .91
+(:seq (:or insects insect bugs))
+---
+precision .97
+recall 1.00
+F1 .99
+(:seq spread to* )
+  (:seq in texas* )
+  (:seq ruined the* )
+  (:seq other southern states* )
+  (:seq :comma or by* )
+  (:seq the weather :comma* )insect* bug* weevil* anymore*
+---
+Precision .98
+Recall .41
+F1 .58
+(:seq spread to)
+(:seq in texas)
+(:seq ruined the)
+(:seq other southern states)
+(:seq :comma or by)
+(:seq the weather :comma)
+insect
+bug
+weevil
+anymore
+
+
+<!---->
+ESCL2.3 - Weather
+precision .93
+recall .82
+F1 .87
+rain rained rainfall rainfalls flood flooded flooding weather sun sunshine
+---
+precision .93
+recall .82
+F1 .87
+(:seq (:or rain rained rainfall rainfalls flood flooded flooding weather sun sunshine))
+
+
+
+<!---->
+ESCL2.4 - War
+precision .94
+recall .77
+F1 .85
+war wars fight fighting
+---
+precision .94
+recall .77
+F1 .85
+(:seq (:or war wars fight fighting))
+---
+.91
+.97
+.94
+(:seq to work very* )
+  (:seq black people had to* )
+  (:seq very little money :period* )
+  (:seq homes and families* )
+  (:seq to chicago and they* )
+  (:seq rent a place* )
+  (:seq hard but* )
+  (:seq very hard and* )
+  (:seq because the jobs* )
+  (:seq had been* )
+  (:seq join the army* )
+  (:seq not growing* )war* fight* fought* serve* troop* blacks* soldiers* |FARM'S*|
+---
+precision .96
+recall .63
+F1 .76
+(:seq to work very)
+(:seq black people had to)
+(:seq very little money :period)
+(:seq homes and families)
+(:seq to chicago and they)
+(:seq rent a place)
+(:seq hard but)
+(:seq very hard and)
+(:seq because the jobs)
+(:seq had been)
+(:seq join the army)
+(:seq not growing)
+war
+fight
+fought
+serve
+troop
+blacks
+soldiers
+|FARM'S|
+
+
+hits
+(:seq (:or destroy* disoy* crop* corp*) :* (:not (:or plantation* weather insect*)))
+(CL2 RC2.1 SCL2.1 RC2.3 ESCL2)
+So if people are losing crops :comma then their losing money and if their losing money than they need a job :period
+(ESCL2 INF)
+Farmers who work on farms sometimes |couldn't| keep up with their crops :period
+(INF ESCL2 RC2.3 SCL2.2 RC2.1 CL2 PK IRC2 A)
+A lot of people came here to look for a new life and for a job hunt many people were farmers who could not take care of their families because farming sometimes got destroyed :period
+(SCL2.1 RC2.3 ESCL2 RC2.3A A)
+Most of the people who came here were farmer because some of their crops |wouldn't| grow so they would lose a lot of money :period
+(INF ESCL2 RC2.3A A)
+And another reason |farmer's| crops keep dieing :period
+(INF ESCL2)
+Because the crops they planted got dry or dead
+(INF ESCL2 RC2.3A A)
+Some of the people moved to chicago because the farmers crops had died :period
+(INF ESCL2 SCL2.1 RC2.3 ESCL2.1 DIST CL1 IRC1 A)
+I think so many people went to chicago is because they had so many jobs that needed to be filled in so people went there for jobs in other people went there for farming because in the paragraph they say :quote-mark a disease can destroy crops :comma a fungus disease destroy the crops in ireland :comma in its hard for the money because its hard for them to get it because a lot of their crops get destroy by things in who will want to buy that or eat it :period
+(ESCL2 DIST)
+In the |1800's| there |weren't| many jobs and it was hard to grow crops :period
+(ESCL2 ESCL2.3 INF)
+You would have better luck because you will not need to worry about the weather most of the time :comma and better fortune because you will not have to worry about having to re :dash grow crops because they were destroyed :period
+(RC2.1 ESCL2 INF RC2.3A CL2 IRC2 A)
+So many people came to chicago because they wanted a better life most of the people were farmer :comma farmers came to chicago because it was hard tacking care of there crops and because they needed more money :period
+(ESCL2 RC2.1 CL2 INF IRC2)
+Because people |din't| have that much money because farms crops sometimes spoil :period
+(CL2 RC2.1 ESCL2 INF RC2.3 SCL2.1)
+Farming dident pay very much and if the crops dident grow well the farmer can lose a lot of money i guss the people were searching some were they can be happy forever :period
+(ESCL2 INF RC2.3A A)
+Why did so many people come to chicago is because farmers kept losing their crops :period
+(RC2.3 ESCL2)
+They |didn't| make money because of there crops :period
+(ESCL2 RC2.1 CL2)
+Farmer's need work because there crops would not grow right at the time :period
+(ESCL2 RC2.3A A)
+So many people came to chicago b ecause mainly of their crops :period
+(ESCL2.4 ESCL2 RC2.3 SCL2.1 A)
+Addison to that lots of people came to chicago because people needed money like all the farmers that moved to chicago because all there corps where getting disoyed and they had to potisapt in the civil war :period
+(ESCL2 RC2.3 INF SCL2.2 RC2.1)
+And people could have to care of their families so they want have to worry about crops being destroyed :period
+(SCL2.1 ESCL2 DIST A)
+So they came to chicago so they could find like a little land to plant their crop and have their animals so that they could get money for it and they needed more room and
+
+
+false alarms
+(SCL2.1 RC2.3 ESCL2.1 RC2.1 CL2)
+Farmers needed a job because many infections around their farm made their crops die and they would loose a lot of money :period
+(SCL2.1)
+They were not making enough money from their crops :period
+(ESCL2.2)
+Also an insect named the boll weevil kill many of their crops :period
+(ESCL2.1 INF)
+It was also hard to farm in those times because in 1845 the fungus disease kill almost all the potato crops :period
+(ESCL2.2 RC2.3 SCL2.1)
+Also it was hard to make money farming because insects destroyed the crops :period
+(ESCL2.1 RC2.3)
+It was hard because the disease destroyed the crops :period
+(ESCL2.2)
+Also in 1892 the boll weevil insect ruined a cotton crop in texas :period
+(ESCL2.3)
+The crops needed the right amount of sunshine and rainfall :comma but sometimes there was too much rainfall which caused floods :period
+(ESCL2.1)
+The crops could be destroyed easily by diseases like the fungus disease :period
+(ESCL2.2)
+In 1892 the weevil insect ruined the cotton crop in texas and it soon spread to other southern states :period
+(ESCL2.1)
+For example :comma in 1845 a fungus disease destroyed the potato crop in ireland :period
+(ESCL2.1 ESCL2.2)
+Also insects and diseases probably had destroyed their crops :period
+(ESCL2.4)
+Farmers |couldn't| plant their crops while there were troops walking on their land and destroying their crops :period
+(ESCL2.1 RC2.1)
+One reason is that disease can destroy crops :period
+(ESCL2.1)
+For example in 1845 a fungus disease destroyed the potato crop in ireland :period
+(ESCL2.1)
+But one reason is that disease can destroy a lot of crops :comma
+(CL2 RC2.1 ESCL2.3)
+For example in 1915 there was this huge flood that destroyed all the crops and so the farmers needed to find other jobs to pay :period
+(ESCL2.3 RC2.3A INF A)
+The other reason i s that farmers needed to move because in the summer there be too much rainfall and also too much sunshine for their crops :period
+(ESCL2.2 ESCL2.1)
+And sometimes they would get diseases and crops would die or bugs would eat the crops :period
+(ESCL2.4)
+So soldiers were stepping on their crops and were killing them :period
+(ESCL2.3 ESCL2.2 SCL2.2 RC2.2 SCL2.1 RC2.1 CL2 IRC2 A)
+Another reason is that they came to search for better lives for their families because a lot were farmers and were not getting paid enough to support their families and many insects destroyed the crops or sometimes to many rainfalls the crops |don't| grow well :period
+(SCL2.1 INF)
+Farmers depend on their crops to make money :comma but if the crops |aren't| growing then they make no money :period
+(ESCL2.3)
+For example crops cannot grow without a certain amount of rainfall and a certain amount of sunlight :period
+(ESCL2.1)
+In 1845 a fungus disease destroyed potato crops in ireland :period
+(ESCL2.1 RC2.3)
+One reasons was because it was a disease going around that can destroy the crops :period
+(ESCL2.4)
+People knew how to farm but it had changed after the civil war in the united states because large plantations were destroyed and the farmers had to rent a place from the landowner to farm :period
+(ESCL2.3)
+They also had trouble with getting the right amount of rain and sunshine for their crops :period
+(ESCL2.1 RC2.3A A)
+People started to move to chicago when t hey had problems :comma such as diseases farmers had to grow their crop and when the diseases broke out they |couldn't| do nothing about it :period
+(ESCL2.2 ESCL2.1 RC2.3)
+One reason is that diseases and insects can destroy farmers crops :period
+(DIST)
+To make money in farming and selling there crops :period
+(ESCL2.1 DIST A)
+Another reasons why so many people did move into chicago was that they searched for better farming or cropping for example in 1845 a fungus destroyed many crops in ireland which made many irish people move into chicago :period
+(ESCL2.1 RC2.3)
+One reason is that diseases can destroy crops :period
+(ESCL2.3)
+If their crops had too much rain or too much sun or not enough they would die :period
+(ESCL2.3)
+Also another thing that happened in there crops would be that they would flood :period
+(DIST CL2 IRC2 A)
+Between 1830 :dash 1930 people moved here because they needed a job :comma grow crops :comma or to have a better life :period
+( ESCL2.2 ESCL2.3 PK ESCL2.4 RC2.3A A IRC2 ESCL2.1 RC2.1 CL2 DIST CL3 INF)
+In :lparen 1848 :rparen many people were impressed of the hub so people wanted in so they brought pigs cows and made meat and other stuff from their land and they started building their own hubs and it caused rich railroad to and then speed boats and they wanted in during the :lparen 1800 :rparen people wanted a better life they |couldn't| grow food cause fungus was on potatoes and people need money so they moved to chicago and they also |couldn't| cause the army was using their land as a battle field and then they burned their crops so they had to move to a better land and then with too much sun they can they but crops need water but a lot of water can flood them an then they will be no use then insects were eating the crops so farmers were driven away to chicago
+(ESCL2.4)
+Large plantations were destroyed by the war :period
+(SCL2.1 RC2.3 ESCL2.3)
+If there is too much sunshine or rainfall crops |don't| grow well :comma farmers can lose a lot of money :period
+(ESCL2.3)
+Farming also depends on weather crops need the right amount of sunshine and rainfall to grow well :period
+(ESCL2.1)
+In ireland a fungus destroyed the potato crop :period
+(SCL2.1 RC2.3 ESCL2.3 ESCL2.1 DIST CL2)
+Then people came from europe to find better homes farmers needed to find somewhere that the crops wont die from fungus like in ireland and they needed somewhere that had sunshine and rainfall but if there was too much sunshine and too much rainfall crops wont grow well and farmers wont make any money :period
+(ESCL2.3)
+In the summer of 1915 :comma too much rainfall caused massive floods that ruined crops on thousands of farms in the southern united states :period
+(ESCL2.4 ESCL2.2 ESCL2.1)
+The main reasons why is because of an insect like the boll weevil ruined the cotton crops :comma disease can destroy crops and because there is so many wars going around that the they fight in the land where farmers grow their crops :period
+(DIST)
+Because people needed a good place to farm their crops to make better money :period
+(ESCL3.1 ESCL2.2 ESCL2.1 SCL2.2 RC2.2 SCL2.1 INF A)
+They move to chicago because the farmer could not make enough money from farming to take care of their families and that in 1845 a fungus disease destroyed the potato crop in ireland in1892 it soon spread to other southern states in 1848 it created the first all water route that went both east west and north south :period
+(ESCL2.4 RC2.3)
+Also because there was a war they would be fighting on there land and they would destroy their crops :period
+(ESCL2.2 ESCL2.1 RC2.3 SCL2.2 RC2.2 SCL2.1 INF A)
+The reason so many people moved to chicago because many of these people were farmers but they could not make enough money from farming to take care of their family :comma because their crops were being destroyed either by fungus or insects eating there crop :period
+(ESCL2.4)
+War also made it hard for farmers because troops were destroying the crops :period
+(ESCL2.1)
+For example :comma in 1845 a fungus disease destroyed the potato crop in ireland :period
+(ESCL2.1 RC2.3)
+One reason is that disease can destroy crops :period
+(ESCL2.1 ESCL2.2 RC2.3A A INF)
+People started to come from everywhere they specially farmers t he main reason that they started to move to chicago was because there were bugs all over and fungus which cause their crops to die :period
+(DIST ESCL2.4 PK A INF SCL2.1 RC2.3 ESCL2.1)
+Cause of the disease they |didn't| have enough money to grow crop or farming but t o moved to united states i t was difficult to moved cause of the war they earn enough money
+(ESCL2.1 RC2.3A A)
+1845 many people moved because a the fungus disease to and it destroy many crop
+(INF SCL2.1)
+Farmers cannot make money without crops :period
+(ESCL2.1)
+For example in 1845 a fungus disease destroyed the potato crop in ireland :period
+(ESCL2.1 RC2.3)
+One reason is that disease can destroy crops :period
+(ESCL2.3)
+In 1915 too much rainfall cause massive floods that ruined crops on thousands of farms in the southern united states :period
+(SCL2.1 RC2.3 ESCL2.3)
+Or if the crops |don't| grow like they are supposed to the farmers lose lots of money :period
+(PK)
+Also :comma if you have a thunderstorm the plants are gonna get ruined by the storm because if the storm is too hard it could damage the crops because it damages the inside of the crops :period
+(ESCL2.1 RC2.3 SCL2.1)
+They |couldn't| make that much money because disease can destroy crops :period
+(ESCL2.2)
+And insects ruin cotton crop :period
+(SCL2.1 RC2.3 ESCL2.1 ESCL2.4 INF)
+So they grew crops to earn some money :comma but the bad thing was if there was disease or wars can harm the crops and the people |can't| earn money :period
+(A RC2.3A DIST ESCL2.3)
+Also crops needed just the right amount of sun :comma and rain and chicago never got too much rain of sun or even snow so many farmers moved here because of that to and |that's| why so many people moved to chicago :period
+(ESCL2.1)
+For example :comma in 1845 a fungus disease destroyed the potato crop in ireland :period
+(IRC2 INF CL2 RA CL1 IRC1 A ESCL2.3)
+But that |wasn't| just it people who had farms had massive floods and their crops will wash away or mess up plus they came for the jobs because where they were they did not have to many job s to choose from so they moved the chicago :period
+(ESCL2.1)
+In 1845 a fungus disease destroyed the potato crop in ireland :period
+(RC2.3A ESCL2.2 ESCL2.1 INF A)
+Another reason so many people moved to chicago i s that many farmers lost their crops because a fungus disease that destroy the potato crop :comma some insects destroy the crops and the way farmers moved to chicago and make more money :period
+(ESCL2.3)
+In the summer of 1915 too much rain caused massive floods that ruined crops on thousands of farms in the southern united states :period
+(SCL2.1)
+Others were farmers and it was hard for them to make money out their crops :period
+(DIST A RC2.3A ESCL2.1 ESCL2.3)
+Farming also depends on the weather it was better than ireland because the crops needed rain and sunshine so they moved to chicago to grow crops and get money then since they build michigan lake and mississippi river they took the crops to other countries then they sold them over there :period
+(ESCL2.1 RC2.3)
+One reason is that disease can destroy crops :period
+(SCL2.1 RC2.3 ESCL2.3)
+If there is a lot of sun and water the crops will die and the farmers will lose a lot of money :period
+(ESCL2.3)
+The crops need enough sunshine and water to grow :period
+(ESCL2.2)
+One is that insects can harm the crops :period
+(ESCL2.2)
+The boll weevil insect ruined the cotton crop in texas in 1892 :period
+(SCL2.1 RC2.3 ESCL2.3)
+I f there is too much water the crops |don't| crow and the farmers lose their money :period
+(ESCL2.1 RC2.3A A)
+One reason was because disease could destroy their crops :period
+(DIST ESCL2.1)
+Because of a fungus disease that grow in the crops and people could died of it :period
+(INF CL2 IRC2 A)
+Some people came to the united states to find jobs because some were tired of growing crops :period
+(ESCL2.3 ESCL2.2 ESCL2.1 RC2.3 SCL2.1)
+It could be hard to make money from farming because disease can destroy crops :comma crops are being destroyed by insects :comma crops need the right amount of sunshine and water to grow :comma and too much water can cause a flood and make crops stop growing :period
+(ESCL2.3)
+If there was too much sunshine or too rainfall crops |didn't| grow well :period
+(ESCL2.3)
+Farmers depended on weather :comma crops needed the right amount of sunshine and rainfall to grow well :period
+(ESCL2.2 RC2.3A A)
+Another reason was because insects were destroying the farmers crops :period
+(ESCL2.1 RC2.3A A)
+There were many reasons but one they were living because disease was destroy their crops :period
+(ESCL2.2)
+Also in 1892 the boll weevil insect ruined the cotton crops in texas :period
+(ESCL2.1 INF)
+In 1845 farmers left their farms because of a fungus disease that destroyed their potato crops in ireland :period
+(INF ESCL2.1)
+One disease that hit ireland in 1845 was fungus and that made the potato crop die :comma and no one wanted potatoes that were destroyed by a disease :period
+(INF SCL2.1 RC2.3 ESCL2.1)
+In 1845 a fungus disease destroyed potatoes so then farmers |didn't| had enough money t o buy clothes or food :period
+(SCL2.1 RC2.3 ESCL2.3)
+Farming depends on weather so if the weather has too much rainfall or sunshine crops |don't| grow well and f armers lose lots of money :period
+(ESCL2.1 RC2.3)
+One reason is that disease can destroy crops :period
+(CL2 RC2.1 ESCL2.1 RC2.3 SCL2.1)
+And when the farmer |couldn't| make a lot of money because a disease destroyed they crops such as potato many potato farmers had to leave ireland in search of a new jobs because of that fungus disease they had to search for a new one :period
+(SCL2.1 RC2.3 ESCL2.3 RC2.3A A)
+And another reason was that rainfall :comma crops |don't| grow well :comma and farmers can lose a lot of money :period
+(CL2 RC2.1 SCL2.1 RC2.3A INF ESCL2.4)
+Most of the crops were destroyed by war so farmers had to work in other lands so they will get paid very little money so they needed to find a better job to have enough money to buy anything they need to survive :period
+(A RC2.3A ESCL2.4 DIST INF CL2)
+The farmers would look for jobs that ware easy for them because it was easier for them to learn it to get money to eat have a home to live on then they change the way of farming they would plant crops in the south many people hade to work hard and get paid very little |that's| another reason people moved to chicago :period
+(ESCL2.2 RC2.3)
+Another reason is crops can be destroyed by insects and these insects destroyed the cotton crop in texas in 1892 and it spread to other southern states :period
+(ESCL2.1 RC2.3 SCL2.1 INF)
+There is a lot of reasons that farmer |don't| get a lot of money and one is by the disease destroying all the potato crops :period
+(DIST A)
+Another reason is to prevent their crops from getting destroyed by floods and illness :period
+(ESCL2.1)
+5 :period for example :comma in 1845 a fungus disease destroy the potato crop in ireland :period
+(DIST)
+Searching for a better life farming crops :period
+(INF ESCL2.4 RC2.1 CL2 IRC2 A)
+They also moved to chicago because they were in the search for a better life because in europe and other places farmers |couldn't| raise crops because of the war in there surroundings :period
+(ESCL2.3)
+Sometimes the weather would be bad :comma like in the summer of 1915 :comma too much rainfall caused massive floods that ruined crops on thousands of farms in the southern united states :period
+(SCL2.2 RC2.2 SCL2.1 INF)
+They |weren't| making profit with the crops and |couldn't| care for their families :period
+(ESCL2.3 ESCL2.2 ESCL2.1 ESCL2.4)
+There was war :comma disease :comma insects :comma and bad weather that destroyed a lot of the crops :period
+(ESCL2.2 RC2.3A INF A)
+Others moved from texas to chicago in 1892 because of the insect called boll of weevil ruined the crop :period
+(ESCL2.1 INF)
+Many people left the u :period s and europe because of the disease like the fungus that destroyed the potato crop :period
+(ESCL2.4)
+Sometimes farmers have to serve the army and cannot plant their crops :period
+(ESCL2.3)
+Like in the summer of 1915 :comma too much rainfall caused massive floods that ruined crops on thousands of farms in the southern united states :period
+(ESCL2.3)
+If theirs too much rainfall crops |don't| grow well :comma and farmers can lose a lot of money :period
+(ESCL2.3)
+Weather may be another reason why crops get ruined crops need the right amount of sunshine and rainfall to grow well :period
+(ESCL2.2)
+The boll weevil insect ruined the cotton crop in texas in 1892 :period
+(ESCL2.1 RC2.3)
+One reason is that disease can destroy crops :period
+(ESCL2.1 RC2.3)
+One of the reason is that disease can destroy crops :period
+(SCL2.1 ESCL2.1 RC2.3)
+One reason was that disease was killing crops and money was going slow :period
+(ESCL3.2 RC3.3 SCL3.2 INF A RC2.3A ESCL2.4)
+In those years on europe there were a lot of wars and a lot of europeans were farmers their crops were destroyed by the war so they moved to chicago where they had made a lot of railroads that transported people from north :comma south :comma east :comma and west :period
+(ESCL2.3)
+Crops need the same amount of sunshine and water :comma because in the summer of 1915 the rainfall caused major flooding in the southern united states and it happened the same in europe :period
+(ESCL2.3)
+The weather is another disaster for crops :period
+(INF CL2 RC2.1 ESCL2.1)
+They had to deal with diseases that destroy crops such as fungus disease that destroyed the potato crop and farmers had to leave there homes to find a new job :period
+(ESCL2.3 DIST)
+Also :comma people in other countries wanted to farm on better grass land :comma so they also wanted to go where |there's| not to much rain or wind to mess up their crops :period
+(ESCL2.1)
+A fungus disease destroyed the |farmer's| potato crop in ireland :period
+(ESCL2.3)
+For example in the summer of 1915 much of rainfall caused massive floods that ruined crops on thousands of farms in the southern of the united states
+(ESCL2.1)
+For example :comma in 1845 a fungus disease destroyed the potato crop in ireland :period
+(ESCL2.1 RC2.3)
+One reason is that disease can destroy the crops :period
+(ESCL2.1 RC2.3 SCL2.1)
+It's hard to make money from farming when your crops are diseased :period
+(ESCL2.1)
+A disease called fungus was a problem in farming because it destroyed the potato crops in ireland :period
+(ESCL2.1 RC2.3A A)
+Some people move because in 1845 their was a disease that destroy a lot of crops :comma
+(ESCL2.3)
+For example :comma in the summer of 1915 :comma too much rainfall caused massive floods that ruined crops on thousands of farms in the southern united states and then the same thing happened in europe :period
+(ESCL2.1)
+For example in 1845 a fungus disease destroyed the potato crop in ireland :period
+(ESCL2.2)
+An insect called boll weevil insect ruined the cotton crops in texas in 1892 and it soon spread to other southern states :period
+(ESCL2.2 RC2.3 SCL2.2 RC2.2 SCL2.1 RC2.1 CL2)
+Many of them were farmers but they could not make enough money from farming to take care of their families for the cause that insects can start to destroy their crops :period
+(ESCL2.3 INF CL2 IRC2 A)
+Some people moved to chicago because some people |didn't| have good jobs where they lived or maybe because of the weather that is ruining their crops :period
+(ESCL2.4 ESCL2.3)
+Also weather and wars destroyed crops :period
+(ESCL2.2)
+An insect in texas ruined crops and it soon spread in the southern states :period
+(ESCL2.2)
+Insects could also destroy crops :period
+(ESCL2.1)
+In 1845 :comma a fungus destroyed the potato crops :period
+(ESCL2.4)
+After war large plantations were destroyed and many farmers had to rent a place to farm from landowners :period
+(ESCL2.3)
+In 1915 too much rainfall caused massive floods that ruined crops on thousands of farms in the southern united states :period
+(SCL2.1 RC2.3 ESCL2.3)
+Crops needed the right amount of sunshine and rainfall to grow well and if they |didn't| farmers would lose a lot of money :period
+(ESCL2.2)
+For example in 1892 the boll weevil insects ruined the cotton crops in texas and soon spread to other states :period
+(ESCL2.2)
+Insects could also ruin the |farmer's| crops :period
+(ESCL2.1)
+For example in 1845 a fungus disease destroyed the potato crop in ireland :period
+(ESCL2.1)
+A disease could destroy the |farmer's| crops :period
+(DIST ESCL2.1 RC2.3 SCL2.2 RC2.1 CL2 RA A INF SCL1.1)
+In chicago between 1830 and 1930 the business grew larger and larger so a lot of people have been coming to chicago and l ive a better life and they can better care of there family so now it is not harder for the men to take care of there family cause it was hard at first because they crops was getting diseased by the people who probably had came there know |it's| better they |don't| have to plant crops everybody is living a new life and a better one :period
+(INF ESCL2.1 RC2.3)
+One reason is that disease destroy crops :comma when they was in 1845 a fungus disease destroyed the potato crop that they had grew with they own money so they could not sale any of there food :period
+(A INF PK SCL3.1 DIST ESCL2.3 ESCL2.2)
+I t soon spread to other southern states but not in the northern states and crops needed sunshine and rainfall so they went to chicago and 1930 chicago |didn't| have the insects that eat crops chicago finally were building canals :comma towers :comma and other stuff and |that's| how they got more population in chicago :period
+(ESCL2.3 INF)
+And people that was farmers need there water to grow their crops :period
+(DIST ESCL1.3 RE1 SCL1.2 RC1.1 CL1 IRC1 A)
+And they also went to chicago to get good jobs and jobs they can do like being a seller and sell crops :period
+(ESCL2.1)
+And |it's| destroying the beautiful crops :period
+(CL1 RC1.1 SCL1.1 ESCL2.1 PK ESCL2.3 ESCL2.4 RC2.3 SCL2.1 INF A)
+So many people moved to chicago because they was losing money because the war was coming :comma it rained so much that their crops was getting messed up :comma t hey had to feed the people in the war :comma some people was running out of money and had to move where things |wasn't| so over priced :comma the fungus disease was destroying the crops too another reason why is many |company's| was getting bigger and needed help with their companies
+(CL1 RC1.1 SCL1.1 RA SCL2.1 RC2.3 ESCL2.3)
+If there are not too much sunshine or too much rainfall :comma crop |don't| grow well :comma and farmers can lose a lot of money :comma and they knew that chicago jobs are getting bigger :comma and they need people to work them :period
+(ESCL2.1 RC2.3 SCL2.1 INF)
+Because they |don't| make a lot of money and disease can destroy crop :comma for a example in 1845 a fungus disease destroy the potato in ireland :period
+(ESCL1.2 CL2 IRC2 DIST CL3 INF ESCL2.4 RC2.3A A)
+Some people moved to chicago because of the war so farmers could not grow their crops and some farmers had to serve in the war other reasons people moved to the city of chicago is for their transportation people wanted a easier way to move their crops :comma pigs and cows they got tired of traveling by boat so chicago made a transportation hub in chicago this way it would be easier to move crops pigs cows and other things some people moved to chicago because clothing other people went for a better life some come to chicago to be able to get a job farming as a butcher or just as a cook some people come to chicago for a new home
+(ESCL2.4 ESCL2.1 RC2.1 CL2 IRC2 A)
+I think people moved to chicago because they want better places to live because most people want to survive and grow their crops but wars and diseases are destroying their crops :period
+(ESCL2.3)
+Farmers need the right amount of rain :comma and sun if they receive the right amount of sun and water or rain the crops would not grow :period
+(ESCL2.2 RC2.3A)
+There was also another reason :comma the boll weevil insect ruined the cotton crop in texas in 1892 :period
+(INF ESCL2.2)
+Because insects can kill potatoes or any other crop :period
+(DIST)
+Or if they were a farmer they moved to chicago to plant more crops :period
+(ESCL2.2)
+That ruined the crops and everything they were raising on the farm :period
+(ESCL2.2)
+Also :comma the boll weevil insect ruined the cotton crop in texas :period
+(ESCL2.1)
+Like in ireland the fungus in 1845 destroy all the potato harvest :period
+(SCL2.1 RC2.1)
+They did not make enough money where they live or grew crops at :period
+(INF ESCL2.3)
+If there are too many rainfalls the crops |don't| grow as well as you imagine it will be :period
+(ESCL2.2)
+Also in texas the boll weevil insect destroyed a cotton crop :period
+(ESCL2.4)
+Also during the wars the farmers could not even plant their crops because the soldiers were using their land :period
+(ESCL2.3)
+If it was too watery or too sunny the crops |woudn't| grow :exclpoint
+(ESCL2.3)
+Like if they were planting crops the farmers had to have the right amount of water :comma and sunshine :period
+(INF ESCL2.4 RA)
+And some were farmers so they stopped their farming because all the wars were just trampling over their crops :period
+(ESCL2.4 INF)
+Not only because there |farm's| were getting destroyed but there families would have no where to live :comma eat :comma sleep :comma or even use the washroom :period
+(INF ESCL2.3)
+Some were destroyed by the earths natural resources :period
+(ESCL2.4)
+Some farms were destroyed by the civil war :period
+(ESCL2.1)
+Disease can destroy crops :comma for example in 1845 a fungus disease destroyed the potato crop in ireland :period
+(PK)
+I wish farmers would never have to depend on weather because it will have a advantage over all of there crops poor farmers :period
+(INF ESCL2.1)
+Crops are being destroyed by little things like well for example the flea disease 1892 a fungus disease took over crops in ireland i feel sorry for the crops and unemployed farmers :period
+(INF ESCL2.3)
+Too much rainfall makes floods ruin crops and too much sunshine can cause droughts causing crops dying :period
+(ESCL2.3 INF)
+People in other countries have hard times making crops cause they need right amount of sunshine and rainfall :period
+(ESCL2.1 RC2.1)
+One of the reasons is diseases could destroy crops for example in 1845 a fungus disease destroyed potato crops in ireland :period
+(ESCL2.3)
+If there is too much rainfall or sunshine :comma crops |don't| grow well and farmers can lose lots of money :comma wars can also make a difficult to earn enough money from farming :period
+(ESCL2.3)
+Farming also depends on the weather crops need the right amount of sunshine and rainfall to grow well :period
+(ESCL2.1)
+In 1845 a fungus disease destroyed the potato crop in ireland :period
+(ESCL2.4)
+Plantation were destroyed by the war :period
+(ESCL2.1)
+One reason is that disease can destroy crops :period
+(ESCL2.3 ESCL2.2 ESCL2.1 RC2.3)
+For example theyre crops were often eaten by tiny bugs or had fungus disease or the crops got to many rain or to much sunlight :period
+(INF CL2 IRC2 A)
+So many people came to chicago because they wanted to live a better life than when they were in the country were they had to grow crops :period
+(ESCL2.4 INF RC2.3A A)
+Another reason why so many people came to chicago is because their homes were being destroyed by the war :comma for example :comma the italians fought for their independence from austria so that made the civil war in the united states change the way farming was done in the south :period
+(ESCL2.3)
+Crops need the right amount of sunshine and rainfall to grow :period
+(ESCL2.1)
+For example in 1845 a fungus disease destroyed the potato crop in ireland :period
+(ESCL2.1 RC2.3)
+One reason is that disease can destroy crops :period
+(DIST ESCL2.2)
+Some bugs eat the crops or some diseise gets on the crops and it will taste and look horrible :period
+(ESCL2.4)
+Large plantations were destroyed by the war :period
+(ESCL2.3)
+In 1915 too much rainfall caused massive floods that ruined crops :dash
+(ESCL2.3)
+Crops need enough rainfall and sunshine :period
+(ESCL2.1)
+In 1845 a fungus disease destroyed the potato crop in ireland :period
+(ESCL2.1 RC2.3A A)
+Many people came to chicago because they had many deseases that destroyed crops :period
+(ESCL2.3)
+Other times the crops get to much water and are flooded and die :period
+(ESCL2.4)
+When people have war in other countreys their farms :comma and homes get destroyed :period
+(CL2 RC2.1 ESCL2.4)
+Large plantations were destroyed many farmers left their homes and families in search fo r better jobs and lives :period
+(ESCL2.3)
+To much rain fall can make a flood on their crops :period
+(CL2 IRC2 A RC2.3A ESCL2.1)
+Many diseases were spreading around crops and people came to chicago for better jobs :period
+(1.0)
+Also because of the wars they were that they destroid there crops too :period
+(ESCL2.3 RC2.3A A)
+The other reason i s that in 1915 too much rainfall caused massive floods that ruined crops :period
+(INF CL2 RC2.1 ESCL2.1 RC2.3A A)
+Some of the reasons on why many farmers came were because the farmers came were because the farmers came because for example in 1845 a fungus disease destroyed the potato crop in ireland and that caused farmers to search for jobs in chicago :period
+(ESCL2.3)
+If there is too much rainfall or to much sunshine |crop's| |don't| grow well :period
+(ESCL2.3)
+Crops need the right amount of sunshine and rain to grow well :period
+(INF)
+That was very scary to see because for me seeing everything and everyone get destroyed makes me very nervous and very scary :period
+(RC2.3A ESCL2.3 A)
+3 :period reason is because the farmers would be working and would be planting crops and the weather |wouldn't| be the right wheather for the crops :comma so then if it rains too much the crops would get destroyed and if its too much sunshine then the crops |won't| grow at all :period
+(ESCL2.4)
+After the civil war large plantations had been destroyed :comma so farmers had to rent a place to farm from landowners :period
+(ESCL2.4)
+Wars also affected crops especially when troops were fighting on their land :period
+(ESCL2.3)
+Too much rain fell :comma and caused flooding which ruined thousands of crops in the southern u :period s :period and europe :period
+(ESCL2.3)
+Weather can also destroy crops because cros need the right amount of sunshine and water :comma but if they get too much :comma the crop |won't| grow so well :period
+(ESCL2.2)
+The boll wevill ruined the cotton crop there :comma and soon it spread to other southern states :period
+(ESCL2.2)
+Insects can also destroy crops like they did in texas in 1892 :period
+(ESCL2.1)
+A fungus disease destroyed a potato crop in ireland :comma so the family had to search for another job :period
+(ESCL2.4)
+One of the main reson is war too cause people cannot farm :comma and some farmers had to fight with them lots of plantations were destroyed :period
+(ESCL2.1 RC2.3 SCL2.1)
+The reasons that they |didn't| make enough money is a disease that can destroy crops :period
+(ESCL2.4)
+Farmers could not farm if troops are fighting on their land and by wars large plantations were destroyed :period
+(SCL2.1 RC2.3 ESCL2.3 ESCL2.2 ESCL2.1)
+Diseases destroyed their crops :comma crops were destroyed by insects :comma if there was too much sunshine or too much rainfall :comma crops |don't| grow well :comma and farmers can lose a lot of money :period
+(A RC2.3A ESCL2.3)
+And it depends on the weather because if the crop get to much rain and to much sun the rain could end up in a flood and a sun can make the ctops thirsty very fast and can drie up fast so a lot of people came to chicago :period
+(PK SCL2.2 RC2.1 CL2 IRC2 A INF RC2.3A ESCL2.4)
+The civil war changed the way farmers were working and the farmers were done in the south large numbers of plant and crops where destroyed by the war so the farmers moved to the united states and fond better jobs and home food and suples to support there families |that's| why the united states has so money people in it and that why it is the 3 rd largest city :period
+(INF ESCL2.4)
+Sometimes the farmers had to surve the army and they h ad to leave there homes and families and there crops :period
+(INF ESCL2.4 RC2.3A A)
+Another reason was because of war money people did not have good crops because troops were in the middle of war at farmers land and they also would need food so they had to tack some crops to feed the troops so when they would walk out side there food would be gone and steped on :period
+(ESCL2.3)
+In the summer of 1915 too much rain caused massive floods and rowind the crops :period
+(ESCL2.2 INF)
+Another reason is because the boll weevil insect ruined cotton crops in taxes in 1892 :period
+(ESCL2.1 INF)
+The reason why there crops were dieing was because in 1845 a fungus disease destroyed the potato crop in ireland meany people left because of that :period
+(ESCL2.1 RC2.3)
+For example in 1845 a fungus disease destroyed the potato crop in ireland and people lost their job because of that
+(ESCL2.4)
+Large plantations were destroyed by the war :period
+(ESCL2.3)
+For example :comma in the summer of 1918 :comma to much rain caused floods that ruined crops on thousands of farms :period
+(ESCL2.3)
+Their crops needed the right amount of sunshine and rainfall to grow well :period
+(ESCL2.2)
+The boll weevil insect ruined the cotton crop in texas in 1892 :period
+(ESCL2.2)
+Insects can also destroy their crops :period
+(ESCL2.1)
+Sometimes their crops would get diseases and destroy their crop :period
+(ESCL2.2)
+And the insects destroy crops by eating them some insects destroy all the crops in the southern states :period
+(ESCL2.1 RC2.3 SCL2.2 INF)
+There are a lot of reasons why they |can't| take care of their families like there are diseases that destroy crops :period
+(ESCL2.4)
+Large plantations were destroyed by the war :period
+(ESCL2.2)
+The boll weevil insects ruined the cotton crop in texas in 1892 :period
+(ESCL2.1)
+Like for example in 1845 a fungus disease destroyed the potato crop in ireland :period
+(ESCL2.1)
+One reason is that disease can destroy crops :period
+()
+Crops need the right amount of sunshine and rainfall if troops are fighting on their land :period
+(ESCL2.2 ESCL2.3 INF)
+Also on some arease of the country many farmers lost some of there crops because of big water whabes and tons of beetols ate them or some of them over flowd with water and got messed up and wherent use full anymore :period
+(ESCL2.1 RC2.3)
+One reason was that disease destroy crops :period
+(1.0)
+For example :comma in 1915 at summer too much rainfall caused a lot of floods that distroyed crops on thousands of farms in the southern united states :period
+(1.0)
+If there was to much sunlight :comma or too much water the crops will die and the same if they had less :period
+(1.0)
+For example :comma in texas in 1892 a boll weevil ruined the cotton crop and then spreaded down to other southern states :period
+(1.0)
+Plus insects destroy crops too :period
+(1.0)
+One reason would be diseases destroying crops :period
+(SCL2.2 RC2.1 CL2 ESCL2.4)
+Also crops can get destroyed by wars or by stepping on them farmers moved away and want to find a better job for there families :period
+(RC2.3A RC2.3A ESCL2 IRC2 CL2 RC1+2 CL1 IRC1 A)
+So many people also came to chicago because there are so many jobs especially the farmers came because their crops were being destroyed so they moved here for better jobs :period
+(ESCL2.2)
+Another reason is insects can also destroy crops :period
+(ESCL2.1)
+For example a fungus disease destroyed the potato crop in ireland :period
+(ESCL2.1)
+Reason one is that disease can destroy crops :period
+(ESCL2.2)
+In 1892 the weevil insect destroyed cotton crops in texas :period
+(ESCL2.1)
+One of the reasons is that diseases can destroy crops :period
+(ESCL2.4)
+In the civil war that was going on some crops got destroyed as well :period
+(ESCL2.1 RC2.3A CL2 RC1+2 RA CL1 IRC1 A)
+Why so many people came to chicago because there were jobs and some farmers needed jobs because disease came and destroyed crops :period
+(RC2.3 INF)
+If there crops got damage they |couldn't| make money :period
+( RC2.3A ESCL2.1 A)
+So many people come to chicago because some farmers crops get destroyed of a disease that destroys crops :period
+(ESCL2.1 RC2.3A A)
+Another reason why people cam to chicago because diseases killed the crops that the farmers made :period
+(ESCL2.3)
+Another reason is because crops would get too much sunshine or too much rainfall :period
+(ESCL2.1 RC2.3)
+Crops would get destroyed because crops would get a fungus disease :period
+(SCL2.2 RC2.2 SCL2.1 RC2.1)
+Many people could not make enough money such as farmers because they |couldn't| sell crops :period
+(ESCL2.3)
+The was a flood and the crops were destroyed :period
+(CL2 RC2.1 SCL2.1 RC2.3 INF ESCL2.4 ESCL2.3)
+That resulted into them not growing crops and not having money but most |didn't| have any skills :period
+(ESCL2.1 RC2.1 CL2)
+Like farmers left because a fungus disease destroyed the potato crop :period
+(ESCL2.4)
+Plantations were destroyed by war and farmers had to rent a place to farm from the landowners :period
+(ESCL2.4)
+I feel sorry for people who been planning to grow there crops and the troops destroyed them :period
+(ESCL2.1 SCL2.1 INF RC2.3)
+Because how would i get by and life i would not have food or money because my crops have fungus so nobody want to by them and i have no money to buy my food :period
+(ESCL2.1 RC2.3A A)
+I would have moved to if a ll my crops die or had fungus :period
+(DIST ESCL2.1 RC2.3A INF A)
+Because most of the people who moved to chicago had crops and gardens to live off o f but they |couldn't| live off crops foreve r because after awhile the crops got fungus and you |can't| eat food with fungus because |you'll| have fungus :period
+(ESCL2.4 ESCL2.2 ESCL2.1 ESCL2.3 RC2.3)
+How i know that is because in the text it says that flood :comma diseases :comma bugs and even wars destroyed the crops :period
+(ESCL2.3)
+Sometimes the wheather |don't| be write because they get to much sunshine and to much rainfalls and when they get that they crops die :period
+(ESCL2.2)
+The boll weevil insect ruined the cotton crop in texas in 1892 :period
+(ESCL2.3)
+To much of this and the crops |won't| grow so good :period
+(ESCL2.3)
+Passage 1 :colon |'the| search for a better |life'| is about how farmers need the right amount of sunshine and the rainfall to grow their crops :period
+(ESCL2.4 ESCL2.1 ESCL2.3)
+The weather was not right :comma disease destroyed crop :comma and war :period
+(ESCL2.1 RC2.3A A)
+Other people moved to chicago because of the diseases spreading on their crops it was killing them :period
+(ESCL2.4)
+The |other's| were sent off to war so they |couldn't| farm either so their crops died because they |couldn't| take care of them :period
+(ESCL2.4)
+Some people had troops fighting on their plantation so they |couldn't| farm and their crops was not growing :period
+(DIST A RC2.3A ESCL2.3)
+Some |people's| crops were getting too much rainfall so their crops flooded so they moved to get a better place to grow their crops :period
+( RC2.3A ESCL2.2 ESCL2.1)
+Because there were diseases and insects damaging the crops and wars :period
+(ESCL2.1 ESCL2.2 RC2.3A A)
+I think so many people came to chicago is because in 1892 the boll weevil was eating farmers crops and in 1845 a fungus disease destroyed the potato crop in ireland :period
+(ESCL2.3)
+Crops need the right amount of sunshine and rain fall to grow well :period
+(ESCL2.1 RC2.3)
+One reason is that disease can destroy crops :period
+(ESCL2.1)
+Diseases destroy farmers crops :period
+(0.0)
+There crops were destroyed by diseases :period
+(ESCL2.3)
+And when the weather have too much sunshine or to much rainfall it can destroy the crops to :period
+(ESCL2.4 RC2.3)
+And when the italians and austria was fighting for their independence they were destroying the crops :period
+(ESCL2.3 ESCL2.1 RC2.3 SCL2.1)
+Also they |wasn't| making a lot of money because of a disease destory some crops and they food |didn't| grow because they needed the right amount of sunshine and rainfall to grow well :period
+(ESCL2.1)
+For example :comma in 1845 a fungus disease destroy the potato crop in ireland :period
+(ESCL2.1 RC2.3 SCL2.1)
+Most of them who |didn't| make a lot of money were farmers :comma and the reason why was because that disease can destroy crops :period
+(Cities are not being destroyed by the fungus disease but crops are.)
+A lot of people came to chicago in 1830 and 1930 because they needed jobs and the people needed a break from what they was working on before and there city that they was living at before was getting destroyed by a fungus disease and the potato crop in ireland :period
+(ESCL2.2)
+And insects destroyed crops also :period
+(ESCL2.1)
+A fungus disease destroyed thousands of crops :period
+(SCL2.2 RC2.2 SCL2.1 RC2.3 ESCL2.2 ESCL2.1)
+They had fungus diseas and boll weevil insects that was ruining their crops and could not make enough money for their familys to eat :period
+(ESCL2.1 RC2.3)
+And because in 1845 a fungus disease destroyed the potato crop in ireland :period
+(PEOPLE WERE NOT COMING TO CHICAGO TO GROW CROPS)
+Also i think that so many people came to chicago because they might can help there crops grow back because in the passage it said that |'| in 1845 a fungus disease spreaded in ireland :period |'|
+(ESCL2.2)
+And different insects got to crops :comma too :period
+(ESCL2.4)
+And some crops have been destroyed during the civil war :period
+(CL2 A IRC2 RC2.3A ESCL2.4 INF DIST)
+Farmers could grow their crops because people was frighting on they land so they came to chicago and they was looking for jobs like skills that was easy to learn :period
+( ESCL2.3 ESCL2.4 DIST SCL2.2 SCL2.1 RC2.2 CL2 PK INF)
+I think they did because in their city they |didn't| have as much water as we were getting and they need mor so they came here ad in their city they |did'nt| have jobs like chicago and when they all moved to chicago they were not skilled on the jobs and they work to get skilled at them and pluse they had no money and most of the people were farmers because the civil war happen in them citys and they could not plant ther crops because it was a flode and the farmers crops were dieing and they needed another plase to plant their crops
+(ESCL2.1 RC2.1 CL2)
+Also they left because of the disease that went went in crops :period
+(ESCL2.3 ESCL2.4 RC2.3A A)
+The reason so many people came to chicago is because framer |couldn't| farm any more because of the war the war start comeing in your land woer the corp was and moshing the up they |would't| goting on rainfall or sunlight :period
+(IREN1 CL1 INF IRC1 A)
+They move to chicago because it was bette jobs there in they can ship they food :comma crops :comma batter in faster :period
+(ESCL2.4 ESCL2.3 RC2.1 CL2 IRC2 A INF RC2.3A)
+So a lot of farmer and the |family's| had to move to the north mainly chicago because they needed a job that |didn't| consist on having a lot of skills :comma spontaniuls in europe the same thing was going on but under different circumstanse because instead of a flood farmers had to wory about troop running over and on their crops :period
+(ESCL2.3)
+Also in the summer of 1915 too much rain fall caused massive floods that ruined crops on thousand of farms is the southern united states :period
+(CL2 IRC2 A RC2.3A INF ESCL2.1)
+In 1845 a fungus plant disease had destroyed the potato crop in ireland so farmers had got tired of growing plant after plant so they got mad and moved to chicago so that they can get paid more and have better jobs :period
+(0.6)
+For example during the mid 1800s many people in europe and u :period s :period left their home in search of a better life like for example :semicolon in 1845 a fungus disease destroyed many potato crops in ireland :comma so they left in search of better jobs :period
+(ESCL2.3)
+If there was too much sunshine or rain feel to much :comma then the crops |wouldn't| grow well :period
+( ESCL2.3 RC2.3 INF)
+They had to worry about weather crops need the right amount of sunshine and the rainfall to grow well :period
+(ESCL2.1)
+In 1845 a fungus disease destroyed the potato crop in ireland :period
+(ESCL2.1 SCL1.1 CL2 IRC2 A)
+And a lot of farmers move to chicago was because they was not making enough money :comma plus the disease could mess up the crops :period
+(ESCL2.4)
+Large plantations were destroyed by war :period
+(ESCL2.3)
+In 1915 too much rainfall caused massive floods that ruined crops on thousands of farms in southern states :period
+(ESCL2.1)
+In 1845 a fungus disease destroyed the potato crop in ireland :period
+(ESCL3.1 ESCL3.2 ESClL1.2 ESCL1.1 A ESCL2.1 ESCL2.2 SCL2.2 RC2.3 ESCL2.3 ESCL2.4 INF)
+And everything was destroying there land :lparen wninf :rparen most of the farmer plantation was crush by the war :lparen escl2 :period 4 :rparen how farmers are suppose to grow there crops :lparen wninf :rparen when the war are taking it down :lparen escl2 :period 4 :rparen everything was destroying the land :lparen wninf :rparen flood too much sunlight :lparen escl2 :period 3 :rparen :lparen rc2 :period 3 :rparen they |didn't| make enough money to take care of there families :lparen scl2 :period 2 :rparen and :lparen rc2 :period 3 :rparen they was destroyed by insects :lparen escl2 :period 2 :rparen and of the fungus disease destroy the crops :lparen escl2 :period 1 :rparen when they move to chicago :lparen a :rparen they was making a lot of money :lparen wninf :rparen making railroad tracks :lparen escl1 :period 1 :rparen and sailing meat :lparen escl1 :period 2 :rparen almost all the people had jobs :lparen wninf :rparen and the railroads was faster than boats :lparen escl3 :period 2 :rparen and then they had to finish the first of all water route that went both east west and north south :lparen escl3 :period 1 :rparen and then the railroad had become the most popular transportation in the united states :period :lparen escl3 :period 2 :rparen
+(SCL2.2 RC2.2 SCL2.1 RC2.1 IRC2 A CL2)
+When people were searching for a better life they came to chicago for a better job instead of farming to make crops that get messed up like everyday and the farmers do not make money :period
+( ESCL2.4)
+Wars also took away form their crops during the :lparen italian and australia :rparen wars they were on other peoples farms during the war and burned other folks crops :period
+(SCL2.1 RC2.3 ESCL2.4)
+Some people was farming and in the time war was going on so there crops would get mess up for sure :period
+(ESCL2.4 ESCL2.3 ESCL2.2 RC2.3)
+Plus it was hard to grow crops do to the bugs :comma rain :comma sunlight :comma and war :period
+(ESCL2.3 INF ESCL2.4)
+The farmers in the south came because the civil war was going on and they were losing crop and they had too much rain and that caused a flood in 1915 :period
+(SCL2.2 ESCL2.2 ESCL2.1 RC2.1 CL2 IRC2 A)
+One reason that so many people came to chicago is t hat in the mid :dash to late |1800's| many people left their homes because of the fungus and the bugs where eating and killing their crops so they had to leave their homes to look for new jobs to take care of their families :period
+(INF ESCL2.4)
+Then again when a war broke out farmers had to stop planting crops if troops were to fight on there land :period
+(INF ESCL2.4)
+If you have to go to the army you |can't| work on your farm and if you have people going to war on your farm |that's| destroying their crops :period
+(ESCL2.1)
+In 1845 fugus disease destroyed the potato crop in ireland :period

@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="search" href="http://clojure.org/space/opensearch" type="application/opensearchdescription+xml" title="Wikispaces Search (Clojure Wiki)" />
+<link rel="alternate" type="application/x-wiki" title="Edit This Page" href="/page/edit/cheatsheet" />
+<link rel="alternate" title="Clojure - All Changes" href="http://clojure.org/wiki/xmla?v=rss_2_0" type="application/rss+xml" />
+<link rel="alternate" title="clojure : cheatsheet - Discussion" href="http://clojure.org/message/xml/cheatsheet?v=rss_2_0" type="application/rss+xml" />
+<link rel="alternate" title="clojure : cheatsheet - Edits" href="http://clojure.org/page/xml/cheatsheet?v=rss_2_0" type="application/rss+xml" />
+<link rel="microsummary" href="/page/microsummary/cheatsheet/edits"/>
+<link rel="microsummary" href="/page/microsummary/cheatsheet/messages"/>
+<script type="text/javascript">
+var wikispaces_isUserLoggedIn = false;
+var wikispaces_isUserOrganizer = false;
+var wikispaces_isMain = true;
+var wikispaces_username = '';
+var wikispaces_spaceName = 'clojure';
+var wikispaces_projectName = '';
+var wikispaces_wikiName = 'clojure';
+var wikispaces_isDefaultSpace = '1';
+var wikispaces_method = 'view';
+var wikispaces_object = 'page';
+var wikispaces_page = 'cheatsheet';
+var wikispaces_id = '';
+var wikispaces_domain = 'wikispaces.com';
+var wikispaces_main_domain = 'wikispaces.com';
+var wikispaces_asset_url_prefix = 'http://www.wikispaces.com';
+var wikispaces_beta_features = false;
+var wikispaces_can_discuss = false;
+</script>
+	<title>Clojure - cheatsheet</title>
+	<link rel="icon" href="/space/showimage/favicon.png">
+	<link rel="shortcut icon" href="/space/showimage/favicon.png">
+	<!--<link rel="stylesheet" href="http://www.wikispaces.com/s/nogz/1v8qv98z-theme_common.css" type="text/css" />-->
+	<link rel="stylesheet" href="/file/view/Clojure.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="/file/view/print.css" type="text/css" media="print" />
+	<script type="text/javascript" src="/file/view/code_highlighter.js"></script>
+	<script type="text/javascript" src="/file/view/clojure.js"></script>
+	<style>.menuWrapper{height: 36px;}
+		#wsMainEditor_external {position: fixed !important; top: 0 !important;}
+	</style>
+<link rel="stylesheet" href="http://clojure.org/stylesheet/view/221886338-217420326C.css" type="text/css" />
+<link rel="stylesheet" href="http://www.wikispaces.com/s/nogz/185xj766-internal.css" type="text/css" />
+
+<!--[if lte IE 8]>
+<style type="text/css">
+.WikiInternalHeaderNav {
+   margin: -3px;
+   zoom: 1;
+   filter:
+         progid:DXImageTransform.Microsoft.Shadow(Color=#999999, Strength=3, Direction=180),
+         progid:DXImageTransform.Microsoft.Shadow(Color=#999999, Strength=3, Direction=270);
+}
+</style>
+<![endif]-->
+<script src=
