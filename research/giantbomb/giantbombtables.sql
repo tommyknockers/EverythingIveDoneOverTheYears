@@ -1,0 +1,36 @@
+CREATE TABLE IF NOT EXISTS `Character2Game` (
+  `character` int(5) DEFAULT NULL,
+  `game` int(5) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `Game2Character` (
+  `game` int(5) DEFAULT NULL,
+  `character` int(5) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `Game2Company` (
+  `game` int(5) DEFAULT NULL,
+  `company` int(4) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `Game2Concept` (
+  `game` int(5) DEFAULT NULL,
+  `concept` int(4) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `Game2Genre` (
+  `game` int(5) DEFAULT NULL,
+  `genre` int(2) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `Game2Platform` (
+  `game` int(5) DEFAULT NULL,
+  `platform` int(3) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `Game2SimilarGame` (
+  `game` int(5) DEFAULT NULL,
+  `similar_game` int(5) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+

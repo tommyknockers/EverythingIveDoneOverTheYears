@@ -1,0 +1,15 @@
+each iphone game has a
+  title
+  href (link to main page for game)
+  price
+    $0.00 if free
+  genre, genre_url
+  link on gamespot
+  publisher publisher_url
+    publisher sometimes "No publisher."
+  rated
+    will be true or false
+    rating
+    voting users
+    reviews_url
+
