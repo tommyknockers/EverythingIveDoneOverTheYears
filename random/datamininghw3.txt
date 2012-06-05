@@ -1,0 +1,12 @@
+(ns sean 
+    (:require clojure.contrib.math)
+    (:use clojure.zip))
+(defn distance 
+  [[x1 y1 z1] [x2 y2 z2]]
+  (clojure.contrib.math/sqrt 
+    (+ 
+      (clojure.contrib.math/expt (- x2 x1) 2) 
+      (clojure.contrib.math/expt (- y2 y1) 2) 
+      (clojure.contrib.math/expt (- z2 z1) 2))))
+(def samples [[1,2,0], [3,1,4], [2,1,5], [0,1,6], [2,4,3], [4,4,2], [5,2,1], [7,7,7], [0,0,0], [3,3,3]])
+
