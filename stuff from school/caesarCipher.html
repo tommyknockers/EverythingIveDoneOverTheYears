@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Caesar Cipher Final Project</title>
+    <meta name="author" content="Sean Neilan">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.5.1.min.js"></script>
+<!-- BEGIN CODE HERE -->
+<script type="text/javascript">
+//// Functions for getting shift & direction:
+// settings.getShift & settings.getDirection
+var settings = {
+    getShift: function () {
+        return parseInt($('[name=shift_input]').val());
+    },
+    getDirection: function () {
+        if ($('[name=direction_input]:checked').val() == "Left")
+            return -1;
+        else
+            return 1
+    }
+};
+
+    
+//// Functions for getting input from and outputting to the encryption and decryption panels:
+// io.encryptionPanel.getInput
+// io.encryptionPanel.output(text)
+// io.decryptionPanel.getInput
+// io.decryptionPanel.output(text)
+var io = {
+    encryptionPanel : {
+        getInput : function() {
+            return $('[name=encryption_input]').val();
+        },
+        output : function(text) {
+            $('#encryption_output').html(text);
+        }
+    },
+    decryptionPanel : {
+        getInput : function() {
+            return $('[name=decryption_input]').val();
+        },
+        output : function(text) {
+            $('#decryption_output').html(text);
+        }
+    }
+};
+
+
+//// Caesar Cipher Section
+
+// Returns A with all characters ciphered.
+//   Shift is a parameter to reduce code duplication in decipherArray.
+//   By default, the param shift is not required. It is for internal use by decipherArray.
+function cipherArray(A, shift) {
+    shift = typeof(shift) != 'undefined' ? shift : settings.getShift(); // Default param code.
+    direction = settings.getDirection();
+    shift *= direction;
+
+    // Can't have a negative shift for mathematical reasons.. @TODO complete this statement
+    while (shift < 0)
+        shift += 26;
+
+    for (var i = 0; i < A.length; i++) {
+        for (var j = 0; j < A[0].length; j++) {
+            if (A[i][j] == ' ') continue; // Skip whitespace.
+            // Z -> 90
+            // A -> 65
+
+            // @TODO Explain how this works..
+            var code = A[i][j].charCodeAt(0); // Get ASCII character code.
+            code -= 65; // Remove ASCII code (Character value must be >= 0 or <= 25).
+            code = (code + shift) % 26; // Shift the character code to the right (always positive, see beginning of this function) and then if past the end of the alphabet, loop around using modulus.
+            code += 65; // Restore ASCII code.
+            A[i][j] = String.fromCharCode(code); // Convert ASCII character code to character.
+        }
+    }
+    return A;
+}
+
+// Returns A with all characters deciphered.
+function decipherArray(A) {
+    shift = settings.getShift();
+    return cipherArray(A, shift*-1);
+}
+
+
+//// Functions for encrypting text & calling the cipher functions
+
+// Takes a string of text and returns a 9x9 block of encrypted text with rows separated by newlines.
+function encryptText(text) {
+    // Remove spaces from input.
+    var text = text.split(' ').join('');
+
+    // Put text into upper left hand corner of 9x9 square array with spaces for filler
+    //   such that the text is in a nxn square format where n = sqrt(len(text))
+    var A = textToArray(9, 9, text);
+
+    // Transpose A
+    var A_T = transpose(A);
+    
+    // Cipher all the elements except for spaces in A_T
+    var encryptedArray = cipherArray(A_T);
+    
+    // Turn the array into a block of text for use in a pre tag named encryption_output
+    var encryptedText = arrayToText(encryptedArray);
+
+    return encryptedText;
+}
+
+// Takes a block of encrypted text and returns a decrypted string.
+function decryptText(encryptedText) {
+    // Separate and insert each line of input into an array.
+    var lines = encryptedText.split('\n');
+    var A = [];
+    for (var i = 0; i < lines.length; i++) {
+        var row = lines[i].split('');
+        if (row.length == 0)
+            continue;
+        A.push(row);
+    }
+
+    // Transpose A
+    var A_T = transpose(A);
+
+    // De-Cipher all the elements in A_T
+    var decryptedArray = decipherArray(A_T);
+
+    // Prepare to turn the decrypted array into a line of text
+    var decryptedText = arrayToText(decryptedArray);
+
+    // Remove whitespace and newlines.
+    decryptedText = decryptedText.split(' ').join('');
+    decryptedText = decryptedText.split('\n').join('');
+
+    return decryptedText;
+}
+
+//// Utility functions
+
+// Returns an array A with r rows and c columns filled by fill.
+// Fill has a default parameters of ' '
+function getArray(r, c, fill) {
+    fill = typeof(fill) != 'undefined' ? fill : ' '; // Default param code.
+
+    var A = new Array();
+    for (var i = 0; i < r; i++) {
+        row = [];
+        for (var j = 0; j < c; j++) {
+            row.push(fill);
+        }
+        A.push(row);
+    }
+    return A;
+}
+
+// Turns an array into a string of characters.
+// Rows are separated by newlines
+function arrayToText(A) {
+    var text = "";
+    var row_length = A[0].length;
+    for (var i = 0; i < A.length; i++) {
+        for (var j = 0; j < row_length; j++) {
+             text += A[i].shift(); // Pop the first character in the current row.
+        }
+        // only add newlines in between rows.
+        if (i != A.length)
+            text += "\n";
+    }
+
+    return text;
+}
+
+// Puts text into a square array A r rows and c columns with spaces for filler.
+// Text will be fit into a nxn square in the upper lefthand corner where
+//   n = sqrt(len(text)).
+function textToArray(r, c, text) {
+    // Get length of input without spaces.
+    var numChars = text.length;
+
+    // Calculate the size of the array used to store encrypted text.
+    var n = Math.ceil(Math.sqrt(parseFloat(numChars)));
+
+    // Compute a 9x9 array A to put our encrypted array text into.
+    var A = getArray(9, 9);
+
+    // Insert text into an nxn square with spaces at end into A.
+    //   (n referenced from above.)
+    var data = text.split(''); // List of data we'll insert into A
+    for (var i = 0; i < n; i++) {
+        for (var j = 0; j < n; j++) {
+            if (data.length > 0) {
+                A[i][j] = data.shift(); // Put the first element of data into A
+            } else {
+                A[i][j] = ' '; // If we're out of data to put into A, insert whitespace.
+            }
+        }
+    }
+
+    return A;
+}
+
+// Returns matrix A tranposed.
+function transpose(A) {
+    var rows = A.length;
+    var cols = A[0].length;
+    // Store the transposed matrix
+    var A_T = getArray(cols, rows);
+    for (var i = 0; i < rows; i++) { // For every row in A_T
+        for (var j = 0; j < cols; j++) { // For every col in A_T
+            A_T[i][j] = A[j][i];
+        }
+    }
+    return A_T;
+} 
+
+// Set up the encrypt/decrypt buttons as soon as the page loads.
+$(document).ready(function() {
+    $('#encryption_submit').click(function() {
+        // Get the text from the encryption panel, encrypt it and output it below the encryption form.
+        text = io.encryptionPanel.getInput();
+        encryptedText = encryptText(text);
+        io.encryptionPanel.output(encryptedText);
+    });
+    $('#decryption_submit').click(function() {
+        // Get the text from the decryption panel, decrypt it and output it below the decryption form.
+        encryptedText = io.decryptionPanel.getInput();
+        decryptedText = decryptText(encryptedText);
+        io.decryptionPanel.output(decryptedText);
+    });
+});
+</script>
+<!-- END CODE HERE -->
+</head>
+    <body>
+        <h1>Caesar Cipher</h1>
+        <h2>Settings</h2>
+            <label for="shift_input">Shift</label>
+            <input type="text" name="shift_input" />
+            <br />
+            <label for="direction_input">Direction</label><br />
+            <input type="radio" checked name="direction_input" value="Left" />Left<br />
+            <input type="radio" name="direction_input" value="Right" />Right
+
+        <h2>Encryption</h2>
+            <label for="encryption_input">Encrypt This</label>
+            <input type="text" name="encryption_input" />
+            <input type="button" id="encryption_submit" value="Encrypt it."/>
+            <pre id="encryption_output">The encrypted text pops out here.</pre>
+
+        <h2>Decryption</h2>
+            <label for="decryption_input">Decrypt This</label>
+            <textarea rows=9 cols=9 name="decryption_input"></textarea>
+            <input type="button" id="decryption_submit" value="Decrypt it."/>
+            <pre id="decryption_output">The decrypted text pops out here.</pre>
+        <h3>Sean Neilan, CNS340, March 15, 2011</h3>
+        <h3>Does not work in IE (yet) (maybe in the future)</h3>
+    </body>
+</html>
+
