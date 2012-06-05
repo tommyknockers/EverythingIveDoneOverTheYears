@@ -1,3 +1,21 @@
 [submodule "My OSX Window Manager"]
 	path = My OSX Window Manager
 	url = ./My OSX Window Manager
+[submodule "fontIndex"]
+	path = fontIndex
+	url = ./fontIndex
+[submodule "itunesStoreScraper"]
+	path = itunesStoreScraper
+	url = ./itunesStoreScraper
+[submodule "prolog"]
+	path = prolog
+	url = ./prolog
+[submodule "quadtrees"]
+	path = quadtrees
+	url = ./quadtrees
+[submodule "research"]
+	path = research
+	url = ./research
+[submodule "squarez"]
+	path = squarez
+	url = ./squarez
