@@ -1,0 +1,227 @@
+JScriptLog 0.7.5.beta
+====================
+
+¥ Added support for globally unique variable names.  Initialize before query with JScript_Display_initializeVariableNames.  When queries terminate, call jslog_Display_resetVariableNames.
+
+¥ Added better display of query results (each variable in query is shown with its bound value).  Added the jslog_varEnclosures_toString function to JScriptLog_Display, and demonstrate in JScriptLog_UI how to bind enumFinalVariableEnclosures(prover.query) to prover.query_variables (via JScript_Display_initializeVariableNames) and display results.
+
+¥ Fix several occurrences of global variables used in for loops where local variables were required.
+
+¥ Added support for the ^/2 existential qualifier to bagof/3 and setof/3 goals.
+
+¥ Fixed bagof/3 (and hence setof/3) to better match standard implementation when variables are involved (i.e., require equivalence, not equality).  Thanks to Jeff T. for bringing these issues to my attention.
+
+¥ Added internal:=@= and internal:\=@= equivalence predicates and jslog_equivalent function to JScriptLog_Unify. 
+
+¥ Fix display of cons pairs (i.e., ',' operators) in atom args. Now p/2 displays correctly as p((a,b),(c,d)), instead of as p/3, p((a,b),c,d).
+
+¥ Added newOrPairsFromTerms constructor in jScriptLog_Types.
+
+JScriptLog 0.7.0.beta
+====================
+
+¥ Added simple prover statistics gathering (returns the size of each stack, the number of bindings on each, and the maximums of multiple samples).
+
+¥ Added stack-space optimization to merge the sub-tree for deterministic and last try goals with their parent (i.e., remove the deterministic goal node where possible).  Added mergeGoalBindings method.  Performs a kind of tail-recursive optimization.  Thanks to Jeff for finding a bug in the first implementation (fixed now -- rtest1*/1 is the regression test).
+
+¥ Changed behaviour of cut (!/0) to remove non-retryable goals when trying the cut, instead of just when the cut is retried.  The result is logically equivalent, but the search tree is pruned earlier.  Some goals (particularly traversal goals with an undo function) delay the full optimization (they are undone on the retry).  The !/0 predicate uses cut_try_fn for the try, instead of true_try_fn.  Thanks again to Jeff for finding a bug in the first implementation (fixed now -- rtest2*/1 is the regression test).
+
+¥ Added the noretry property to ATOM_GOALS.  If this property is true, then the goal must fail the next retry.  Effectively used by cut (!/0) to support tail-recursive optimization with simple predecessor test.
+
+¥ Removed TYPE_FUNCTION_GOAL and TYPE_TRAVERSAL_GOAL goal types, and their associated Goal functions.  These are handled, as they were previously, as part of the TYPE_ATOM_GOAL.  
+
+¥ Added optional ruleset and goal_type properties to terms.  newGoal now uses this information to determine the goal to create.  newAtomGoal now sets the term.ruleset value to the found ruleset, if it was not already found.  internal:atom_append! now invalidates the term.ruleset property (because it changes the arity).
+
+¥ Added getOperatorType, getOperatorPrecedence, and setOperatorInfo methods for RuleSets.  Added several OP_TYPE_* constants.  RuleSets which represent operators now have the associated op_type and op_precedence properties set.
+
+¥ Added internal:flatten predicate (flattens a list).
+
+¥ Added some experimental post-consult optimizations: 
+
+1) rule.name and term.name are set equal to the owning ruleset.name (a same string object which speeds comparison on some platforms), 
+
+2) term.ruleset and term.goal_type are bound to the correct values to speed rule lookup and goal creation.  
+
+To perform pre-binding, call optimizeKB after consult.  Unfortunately, the optimizations provide only a slight performance benefit.  
+
+NOTE: There is a limit on the nesting-depth of terms in the KB that the optimization code can handle (may be limited by Javascript stack space). 
+
+¥ Added jslog_GoalStack_toString and jslog_Goal_toString functions to display goal-stacks (e.g. explored and frontier) and goals.
+
+¥ Added current_op/3 and internal:current_op/4 predicates.  Also added internal_current_op_try_fn, internal_current_op_collect_rulesets, internal_current_op_test, and internal_current_op_retry functions.
+
+¥ Added isOperatorRuleSet, getOperatorTypeStringFromType, and getOperatorTypeFromString methods to JScriptLog_KB.js file.
+
+¥ Modified jslog_toString to take a second kb parameter (the KB).  If kb is not null then operator precedence is used to display operators using infix notation.  Removed function jslog_toString_BinaryOp and replaced it with jslog_toString_List which is used to display lists in the standard syntactic-sugar form.  Fixed a runtime error bug for displaying {}/1 and ()/1 predicates.  Added jslog_Display_AtomName, jslog_Display_needsParentheses, and jslog_Display_needsSpace helper functions to JSciptLog_Display.js file.
+
+¥ Added an experimental Prolog-parser-in-Prolog.  It is very basic and incomplete; not suitable for more than simple queries.  It does not give advice on syntax errors (e.g., their location or cause), it does not handle infix operators (i.e., it is primarily suitable for basic single-atom / predicate queries), and it is too slow for consulting KBs (there is an external parser to help construct KBs -- see patch #1311136 for the writeJSLog/1 converter tool).
+
+
+JScriptLog 0.6.0.alpha
+====================
+
+¥ Changed internal:current_predicate/3 to internal:current_predicate/2 using a single function rule.  abolish/1 and current_predicate/1 rules were re-writen to accommodate changes.  Removed unnecessary code (the internal_current_predicate_*_fn) and updated Goals property documentation to reflect that some properties were no longer needed.
+
+¥ Updated prover protocol, regarding goal.bindings for tryGoal and retryGoal, to preserve the goal.bindings array (to save from creating new copies).  goal.bindings must be empty on fail, but should not be removed (i.e., made null).  goal.bindings are assumed to be empty, if not null, for tryGoal.  try_fn functions can assume that goal.bindings is an empty array (they are responsible for creating the subgoal, however).  retry_fn functions can assume empty arrays.
+
+¥ Changed nextUnifiedRuleBodyForGoal method so that it only creates a new array for goal.bindings if goal.bindings == null (otherwise the array must be empty).
+
+¥ Changes to JScriptLog_Prover.js source.  Added Prover class, which encapsulates proof queries, and maintains the prover state, associated KB, and goal sets.  Replaced jslog_user_* and jslog_prove* functions with proveProver, retryProver, stopProver, and haltProver methods.  Updated JScriptLog_UI.js to reflect prover changes.  As a user of the Prolog Prover, it no longer needs to keep track of the QUERY_STATE_* values. Added isProverState* test methods.  Moved jslog_kb declaration out of JScriptLog_KB.js and into JScriptLog_UI.js (the user of the JScriptLog Prolog engine should construct the KB they want to use).  Modified tryGoal and retryGoal to take a Prover object (instead of kb, frontier, explored).
+
+¥ Modified protocol for try_fn and retry_fn traversal functions so that they take a prover parameter, instead of the two stacks (this gives traversal functions more information, hence greater control).
+
+¥ Changed stopProver to perform an proper stop by undoing the explored goals.  haltProver now performs an immediate stop without performing goal cleanup.
+
+¥ Added undoGoal to perform unbinding for a goal.  Traversal rules can now have a undo_fn to handle special unbinding cases.  newTraversalFunction method now takes an extra undo_fn argument (null if there is no special case).  Added internal_clause_undo_fn to handle unbinding of subgoal property.  Updated tryGoal, retryGoal, and cut_retry_fn to use undoGoal. 
+
+¥ Fixed issue where cut (!) internal:clause/4 could interact to leave variables bound on the retry (because of the subgoal.bindings).  The addition of undoGoal solved the problem.
+
+¥ Updated comment documentation of protocols for try_fn, retry_fn, undo_fn, and fn type functions.
+
+¥ Added internal:sumlist/4 for performing a Pred operation on a list and accumulator, returning the final accumulator value.
+
+¥ Added support for exceptions with catch/3 and internal:catch/3.  Added internal_catch_try_fn, internal_catch_retry_fn, internal_catch_undo_fn, and internal_catch_handle_catch functions to implement internal:catch/3.
+
+¥ Added try/catch blocks to proverProver, retryProver, and stopProver methods to capture exceptions, undo the current goal (if possible) and re-throw the error.  Updated protocol documentation for traversal functions (try_fn, retry_fn, and undo_fn functions) on handling exceptions.
+
+¥ Added phase property to KB to determine if the KB is in the middle of consulting or is ready for a query.
+
+¥ Added newKB constructor to create a KB with all builtin and internal predicates.  The KB class now just creates an empty KB.  Added loadKBLibrary to load pre-defined predicates.
+
+¥ Added JScriptLog_Utilities.js file containing non-standard, but useful predicates (e.g., writeln/1, assert/1, ground/1, term_variables/2, member/2, append/3, select/3, etc.).  The JScriptLog.html file now indicates, via comments, which *.js source files are part of the core JScriptLog Prolog Engine, which are part of the extras, and which are controllers for the provided JScriptLog User Interface.
+
+¥ Added newInternalErrorException to denote serious internal errors which might leave the system in an inconsistent state.  While these can be caught with catch/3, it is not recommended where logical consistency is required.
+
+¥ Added the pprove/1 Prolog meta-interpreter to the demo / testing predicates.  pprove/1 can handle meta-interpeting the cut (!) correctly too. A demo query illustrates meta-interpreting a queens/2 query.
+
+
+JScriptLog 0.5.5.alpha
+====================
+
+¥ Added newErrorException method.  Changed new Error("") statements, to newErrorException("") -- (so these exceptions can be caught in catch/3).
+
+¥ Added isInteger and getTermArityFromNameArity convenience methods to JScriptLog_Types.js, updated isinteger_fn, arg_fn, and internal_atom_setarg_fn.
+
+¥ Added getRuleSetFromNameArity convenience method to the JScriptLog_KB.js file.
+
+¥ Added newAtomGoalFromRuleSet convenience method to JScriptLog_Goals.js file.
+
+¥ Added getConsPairEnclosureFromEnclosureArray convenience method to JScriptLog_Enclosures.js file.
+
+¥ Added clause/2, abolish/1, current_predicate/1.  Added support predicates: internal:current_predicate/3, internal:clause/5, internal:retract/2, internal:abolish/1, and internal:rule/3.  Added try_fn and retry_fn traversal functions for internal:current_predicate/3, and internal:clause/5.  
+
+¥ Fixed retract/1 to support removing rules too.  Changed the traversal functions for retract/1 to a single function for internal:retract.
+
+¥ Removed duplicate call to undoGoalBindings for the goal in cut_retry_fn, since this should already be done in retryGoal.
+
+¥ Fixed jslog_compare to work correctly with object reference terms.  Affects internal:compare/3, ==/2, and the @*/2 comparison operators.
+
+¥ Removed duplicate mod/2 definition in KB (thanks Jeff!).
+
+¥ Fixed issue with internal_assert_fn that could affect the addition of rule terms, possibly bypassing the check for dynamic rulesets (thanks Jeff!).
+
+¥ Added atom_length/2, atom_chars/2, char_code/2, internal:code_char/2, internal:number_atom/2, number_chars/2, atom_codes/2, number_codes/2, atom_concat/3, sub_atom/5.
+
+¥ Modified newListFromTerms method to remove an unnecessary test case.
+
+¥ Added unify_with_occurs_check/2. Added jslog_unify_with_occurs_check and jslog_occurs_check functions to JScriptLog_Unify.js file.
+
+
+
+JScriptLog 0.5.0.alpha
+====================
+
+¥ Fixed copy_term/2 and internal:copy_term/2.  Previously, the query: X=Y,copy_term(f(X,Y),f(a,Z)). would leave Z unbound (it should be bound Z=a).  Modified newDuplicateEnclosure to hash on the enclosure arrays, modified newDuplicateTermFromEnclosure to also keep a hash on the enclosure arrays to track the equivalent variables between terms, and modified replaceVariablesWithTerms slightly to change how the encls_hash value was stored.  
+
+Thanks to Jeff Thompson for catching this bug! 
+
+¥ Added the ->/2, ->/3, and if/3 predicates.  Also added internal:atom_setarg!/3 predicate for mutating an atom.
+
+¥ Added meta-logical predicates: float/1 (same as number/1 because all numbers are float in Javascript), and integer/1.
+
+¥ Added math operators: float/1, float_fractional_part/1, and float_integer_part/1 (same as integer/1).
+
+¥ Added arg/3 predicate.
+
+¥ Added term_variables/2 and ground/1 predicates.  Also added internal:term_variables/2 which both these predicates use, and added the enumFinalVariableEnclosures and enumVariables methods to find unbound variables in an enclosure and term.
+
+¥ Added some generally useful internal predicates: internal:member/2, internal:append/3, internal:selectlist/4, internal:convlist/4, internal:inlist/2, internal:call/2.
+
+¥ Added bagof/3.  Also added helper predicates: internal:bagof_results/3, internal:bagof_match/3.
+
+¥ Added setof/3.  Also added helper predicates: internal:merge_sort/2, internal:singleton/2, internal:length/2, internal:merge_lists/2, internal:merge_all_pairs/2, internal:merge_pair/3.
+
+¥ Added comparison operators: @</2, @=</2, @>/2, @>=/2.  Also added internal:compare/3, and comparison method jslog_compare in  JScriptLog_Unify.
+
+¥ Removed jslog_identical.  Use jslog_compare instead.
+
+¥ Split out *_fn functions from JScriptLog_KB.js into JScriptLog_Builtins.js file. 
+
+¥ Added Exception class.
+
+¥ Added halt/0 and halt/1 predicates.
+
+¥ Added throw/1 predicate (NOTE: there is no way to catch the exception within Prolog, yet).
+
+
+JScriptLog 0.4.alpha
+====================
+
+¥ Modified the </2, =</2, >/2, and >=/2 operators to evaluate the LHS and RHS expressions before comparison.
+
+¥ Added comparison operators: =:=/2 and =\=/2.
+
+¥ Added math operators: ///2, mod/2, **/2, exp/1, log/1, sqrt/1, abs/1, sin/1, cos/1, tan/1, asin/1, acos/1, atan/1, atan2/2, integer/1, floor/1, ceiling/1, round/1, sign/1, /\/2, \//2, #/2, <</2, >>/2.
+
+¥ Added repeat/0 and once/1 predicates.
+
+¥ Added meta-logical predicates: var/1, nonvar/1, atom/1, atomic/1, compound/1, number/1.
+
+¥ Modified tryGoal and retryGoal for the case where the goal represents a traversal (as determined at run-time) which needs to retry.  In the tryGoal function, the goal.retry_fn is set, so that on retry it is easy to determine if, and which, retry_fn to evaluate (this does not apply to TRAVERSE goals, which already have this information).
+
+JScriptLog 0.3.alpha
+====================
+
+¥ Added retract/1 predicate and removeRuleFromRuleSet method. IMPORTANT NOTE: retract/1 only removes facts, not rules from the KB.  This will be fixed in the future when support for abolish/1 and clause/2 are introduced.
+
+¥ Modified getTermNameArity to throw an error if term was not an atom (i.e., variables, numbers and objects don't have name/arity).
+
+¥ Fixed protocol for calling FUNCTION and TRAVERSAL goal functions.  The KB is now set as a property of each goal at the start of the 'try'.
+
+¥ Added isDynamicRuleSet method to test if a ruleset is dynamic.
+
+¥ Added getRuleNameArityFromTerm method.
+
+¥ Added JScriptLog_Hashtable.js file with objects and methods for a hashtable that supports objects as keys (not just strings).
+
+¥ Fixed jslog_unify method so that equivalent variables are not bound (e.g.,previously, =(A,A), could cause infinite loop).
+
+¥ Added asserta/1, assertz/1, and assert/1 predicates.  Added newDuplicateTermFromEnclosure and replaceVariablesWithTerms method.  Added internal:copy_term/2 predicate.
+
+¥ Added a new term type for OBJECT reference (a term can reference an object).  Added newObjectReference and isObjectReference methods.  Updated jslog_toString to handle object reference case specially.
+
+¥ Added newDuplicateTerm method to perform copy of a term.
+
+¥ Added copy_term/2 predicate.  Added newDuplicateEnclosure method. 
+
+¥ Added findall/3 predicate.  Added internal:findall/3 and a internal:atom_append!/2 atom mutator predicate.
+
+¥ Added =../2 predicate.
+
+¥ Added ==/2 and \==/2 identicallity test predicates.  Added jslog_identical method.
+
+¥ Added \=/2 non-unifiable test predicate.
+
+
+JScriptLog 0.2.alpha 
+====================
+
+¥ Added JScriptLog_Evaluate.js for expression evaluation.  is/2 now evaluates expressions of arbitrary complexity (only the basic math operations are supported at present: +,-,*,/). 
+
+¥ Change references to PREDICATE to ATOM (e.g., TYPE_PREDICATE is now TYPE_ATOM, isPredicate is now isAtom, newPredicate is now newAtom, and TYPE_PREDICATE_GOAL is now TYPE_ATOM_GOAL).  Added specialized type for NUMBER.
+
+
+JScriptLog 0.1.alpha 
+====================
+
+¥ Initial Release.  
