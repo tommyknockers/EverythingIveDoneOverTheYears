@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/gockie/!svn/ver/1/djangology/nltk/classify
+END
+api.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/gockie/!svn/ver/1/djangology/nltk/classify/api.py
+END
+maxent.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/gockie/!svn/ver/1/djangology/nltk/classify/maxent.py
+END
+decisiontree.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/gockie/!svn/ver/1/djangology/nltk/classify/decisiontree.py
+END
+util.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/gockie/!svn/ver/1/djangology/nltk/classify/util.py
+END
+mallet.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/gockie/!svn/ver/1/djangology/nltk/classify/mallet.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/gockie/!svn/ver/1/djangology/nltk/classify/__init__.py
+END
+tadm.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/gockie/!svn/ver/1/djangology/nltk/classify/tadm.py
+END
+megam.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/gockie/!svn/ver/1/djangology/nltk/classify/megam.py
+END
+naivebayes.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/gockie/!svn/ver/1/djangology/nltk/classify/naivebayes.py
+END
+rte_classify.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/gockie/!svn/ver/1/djangology/nltk/classify/rte_classify.py
+END
+weka.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/gockie/!svn/ver/1/djangology/nltk/classify/weka.py
+END

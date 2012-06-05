@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/gockie/!svn/ver/1/djangology/nltk/corpus
+END
+util.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/gockie/!svn/ver/1/djangology/nltk/corpus/util.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/gockie/!svn/ver/1/djangology/nltk/corpus/__init__.py
+END
+europarl_raw.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/gockie/!svn/ver/1/djangology/nltk/corpus/europarl_raw.py
+END

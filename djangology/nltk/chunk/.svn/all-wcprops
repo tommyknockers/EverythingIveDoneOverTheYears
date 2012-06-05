@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/gockie/!svn/ver/1/djangology/nltk/chunk
+END
+api.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/gockie/!svn/ver/1/djangology/nltk/chunk/api.py
+END
+regexp.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/gockie/!svn/ver/1/djangology/nltk/chunk/regexp.py
+END
+util.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/gockie/!svn/ver/1/djangology/nltk/chunk/util.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/gockie/!svn/ver/1/djangology/nltk/chunk/__init__.py
+END
+named_entity.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/gockie/!svn/ver/1/djangology/nltk/chunk/named_entity.py
+END

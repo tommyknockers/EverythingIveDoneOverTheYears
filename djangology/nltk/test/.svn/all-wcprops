@@ -1,0 +1,293 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test
+END
+corpus.doctest
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/corpus.doctest
+END
+tag.doctest
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/tag.doctest
+END
+relextract.doctest
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/relextract.doctest
+END
+dependency.doctest
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/dependency.doctest
+END
+treetransforms.doctest
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/treetransforms.doctest
+END
+probability.doctest
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/probability.doctest
+END
+nonmonotonic.doctest
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/nonmonotonic.doctest
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/__init__.py
+END
+portuguese_en.doctest
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/portuguese_en.doctest
+END
+featstruct.doctest
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/featstruct.doctest
+END
+grammar.doctest
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/grammar.doctest
+END
+featgram.doctest
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/featgram.doctest
+END
+semantics.doctest
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/semantics.doctest
+END
+misc.doctest
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/misc.doctest
+END
+internals.doctest
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/internals.doctest
+END
+sem3.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/sem3.cfg
+END
+gluesemantics.doctest
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/gluesemantics.doctest
+END
+doctest_driver.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/doctest_driver.py
+END
+toy.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/toy.cfg
+END
+metrics.doctest
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/metrics.doctest
+END
+stem.doctest
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/stem.doctest
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/Makefile
+END
+portuguese.doctest_latin1
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/portuguese.doctest_latin1
+END
+onto1.fol
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/onto1.fol
+END
+simple.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/simple.py
+END
+classify.doctest
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/classify.doctest
+END
+util.doctest
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/util.doctest
+END
+coverage.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/coverage.py
+END
+wordnet.doctest
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/wordnet.doctest
+END
+grammartestsuites.doctest
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/grammartestsuites.doctest
+END
+toolbox.doctest
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/toolbox.doctest
+END
+chat80.doctest
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/chat80.doctest
+END
+tokenize.doctest
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/tokenize.doctest
+END
+floresta.txt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/floresta.txt
+END
+collocations.doctest
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/collocations.doctest
+END
+drt.doctest
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/drt.doctest
+END
+simple.doctest
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/simple.doctest
+END
+all.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/all.py
+END
+ccg.doctest
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/ccg.doctest
+END
+testrunner.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/testrunner.py
+END
+logic.doctest
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/logic.doctest
+END
+inference.doctest
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/inference.doctest
+END
+tree.doctest
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/tree.doctest
+END
+discourse.doctest
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/discourse.doctest
+END
+resolution.doctest
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/resolution.doctest
+END
+chunk.doctest
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/chunk.doctest
+END
+data.doctest
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/data.doctest
+END
+parse.doctest
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/gockie/!svn/ver/1/djangology/nltk/test/parse.doctest
+END

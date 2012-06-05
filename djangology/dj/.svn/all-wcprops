@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svnroot/gockie/!svn/ver/7/djangology/dj
+END
+iaa.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/gockie/!svn/ver/1/djangology/dj/iaa.py
+END
+util.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/gockie/!svn/ver/1/djangology/dj/util.py
+END
+views.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/gockie/!svn/ver/7/djangology/dj/views.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/gockie/!svn/ver/1/djangology/dj/__init__.py
+END
+tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/gockie/!svn/ver/1/djangology/dj/tests.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/gockie/!svn/ver/1/djangology/dj/models.py
+END
+urls.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/gockie/!svn/ver/1/djangology/dj/urls.py
+END
+widgets.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/gockie/!svn/ver/1/djangology/dj/widgets.py
+END
+abner.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/gockie/!svn/ver/1/djangology/dj/abner.py
+END

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/gockie/!svn/ver/1/djangology/nltk/stem
+END
+api.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/gockie/!svn/ver/1/djangology/nltk/stem/api.py
+END
+regexp.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/gockie/!svn/ver/1/djangology/nltk/stem/regexp.py
+END
+porter.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/gockie/!svn/ver/1/djangology/nltk/stem/porter.py
+END
+lancaster.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/gockie/!svn/ver/1/djangology/nltk/stem/lancaster.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/gockie/!svn/ver/1/djangology/nltk/stem/__init__.py
+END
+rslp.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/gockie/!svn/ver/1/djangology/nltk/stem/rslp.py
+END
+wordnet.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/gockie/!svn/ver/1/djangology/nltk/stem/wordnet.py
+END
+isri.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/gockie/!svn/ver/1/djangology/nltk/stem/isri.py
+END

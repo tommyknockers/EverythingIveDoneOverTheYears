@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svnroot/gockie/!svn/ver/1/djangology/nltk/sem
+END
+lfg.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/gockie/!svn/ver/1/djangology/nltk/sem/lfg.py
+END
+linearlogic.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/gockie/!svn/ver/1/djangology/nltk/sem/linearlogic.py
+END
+drt.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/gockie/!svn/ver/1/djangology/nltk/sem/drt.py
+END
+drt_glue_demo.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/gockie/!svn/ver/1/djangology/nltk/sem/drt_glue_demo.py
+END
+cooper_storage.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/gockie/!svn/ver/1/djangology/nltk/sem/cooper_storage.py
+END
+glue.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/gockie/!svn/ver/1/djangology/nltk/sem/glue.py
+END
+logic.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/gockie/!svn/ver/1/djangology/nltk/sem/logic.py
+END
+relextract.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/gockie/!svn/ver/1/djangology/nltk/sem/relextract.py
+END
+util.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/gockie/!svn/ver/1/djangology/nltk/sem/util.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/gockie/!svn/ver/1/djangology/nltk/sem/__init__.py
+END
+evaluate.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/gockie/!svn/ver/1/djangology/nltk/sem/evaluate.py
+END
+chat80.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/gockie/!svn/ver/1/djangology/nltk/sem/chat80.py
+END
+hole.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/gockie/!svn/ver/1/djangology/nltk/sem/hole.py
+END

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svnroot/gockie/!svn/ver/7/djangology
+END
+english.pickle
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/gockie/!svn/ver/1/djangology/english.pickle
+END
+manage.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/gockie/!svn/ver/1/djangology/manage.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/gockie/!svn/ver/1/djangology/__init__.py
+END
+test.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svnroot/gockie/!svn/ver/7/djangology/test.py
+END
+settings.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/gockie/!svn/ver/7/djangology/settings.py
+END
+run_coverage.sh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/gockie/!svn/ver/1/djangology/run_coverage.sh
+END
+urls.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svnroot/gockie/!svn/ver/1/djangology/urls.py
+END
+getTextFiles.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/gockie/!svn/ver/1/djangology/getTextFiles.py
+END

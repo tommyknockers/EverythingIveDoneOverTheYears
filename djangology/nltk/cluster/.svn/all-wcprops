@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/gockie/!svn/ver/1/djangology/nltk/cluster
+END
+api.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/gockie/!svn/ver/1/djangology/nltk/cluster/api.py
+END
+gaac.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/gockie/!svn/ver/1/djangology/nltk/cluster/gaac.py
+END
+util.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/gockie/!svn/ver/1/djangology/nltk/cluster/util.py
+END
+kmeans.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/gockie/!svn/ver/1/djangology/nltk/cluster/kmeans.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/gockie/!svn/ver/1/djangology/nltk/cluster/__init__.py
+END
+em.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/gockie/!svn/ver/1/djangology/nltk/cluster/em.py
+END

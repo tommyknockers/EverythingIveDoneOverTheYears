@@ -1,0 +1,71 @@
+{% extends "dj/base.html" %}
+
+{% block title %}Inter-Annotator Agreement{% endblock %}
+
+    {% block page-name %}Annotation disagreement details for for annotator '{{annotator2.username}}',
+           against gold standard annotator '{{annotator1.username}}' , project '{{project.name}}'
+    {% endblock %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}dj/css/changelists.css"/>
+{% endblock %}
+
+        {% block breadcrumb %}<a href="{% url dj.views.start %}">Home</a>{% endblock %}
+        {% block content %}
+        <a href="{% url dj.views.iaaStats annotator1.id, annotator2.id, project.id %}">Go back to IAA</a>
+<!--<div class="breadcrumbs">&rsaquo; Stats</div>-->
+<h1>Total of {{ total }} {{ infoType }} Annotations - {{span}} Match</h1>
+
+<div id="content-main">
+
+
+    <div class="module changelist">
+
+
+        <table cellspacing="0">
+            <thead>
+            <tr>
+                <th>
+                    Unique Annotations
+                </th>
+                <th>
+                    Number of Occurences
+                </th>
+                
+
+            </tr>
+            </thead>
+            <tbody>
+
+
+            {% for a,n in annotation_list%}
+            <tr class="{% cycle row1,row2 %}">
+                <th>{{ a }}</a></th>
+                <th>{{ n }}</a></th>
+            </tr
+            {% endfor %}
+
+            </tbody>
+        </table>
+
+
+        <!--<p class="paginator">-->
+
+        <!--{{ doc_list|length }} abstracts-->
+
+        <!--</p>-->
+
+    </div>
+
+
+</div>
+
+
+
+
+
+</div>
+<!-- END Content -->
+{% endblock %}
+
+{% csrf_token %}

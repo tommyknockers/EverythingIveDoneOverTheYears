@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/gockie/!svn/ver/1/djangology/nltk/metrics
+END
+confusionmatrix.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/gockie/!svn/ver/1/djangology/nltk/metrics/confusionmatrix.py
+END
+artstein_poesio_example.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/gockie/!svn/ver/1/djangology/nltk/metrics/artstein_poesio_example.txt
+END
+distance.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/gockie/!svn/ver/1/djangology/nltk/metrics/distance.py
+END
+association.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/gockie/!svn/ver/1/djangology/nltk/metrics/association.py
+END
+scores.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/gockie/!svn/ver/1/djangology/nltk/metrics/scores.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/gockie/!svn/ver/1/djangology/nltk/metrics/__init__.py
+END
+windowdiff.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/gockie/!svn/ver/1/djangology/nltk/metrics/windowdiff.py
+END
+spearman.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/gockie/!svn/ver/1/djangology/nltk/metrics/spearman.py
+END
+agreement.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/gockie/!svn/ver/1/djangology/nltk/metrics/agreement.py
+END

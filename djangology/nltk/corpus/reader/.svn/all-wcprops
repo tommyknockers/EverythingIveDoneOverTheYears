@@ -1,0 +1,191 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/gockie/!svn/ver/1/djangology/nltk/corpus/reader
+END
+rte.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/gockie/!svn/ver/1/djangology/nltk/corpus/reader/rte.py
+END
+tagged.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/gockie/!svn/ver/1/djangology/nltk/corpus/reader/tagged.py
+END
+ycoe.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/gockie/!svn/ver/1/djangology/nltk/corpus/reader/ycoe.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/gockie/!svn/ver/1/djangology/nltk/corpus/reader/__init__.py
+END
+nps_chat.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/gockie/!svn/ver/1/djangology/nltk/corpus/reader/nps_chat.py
+END
+ppattach.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/gockie/!svn/ver/1/djangology/nltk/corpus/reader/ppattach.py
+END
+verbnet.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/gockie/!svn/ver/1/djangology/nltk/corpus/reader/verbnet.py
+END
+bracket_parse.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/gockie/!svn/ver/1/djangology/nltk/corpus/reader/bracket_parse.py
+END
+wordlist.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/gockie/!svn/ver/1/djangology/nltk/corpus/reader/wordlist.py
+END
+conll.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/gockie/!svn/ver/1/djangology/nltk/corpus/reader/conll.py
+END
+xmldocs.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/gockie/!svn/ver/1/djangology/nltk/corpus/reader/xmldocs.py
+END
+api.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/gockie/!svn/ver/1/djangology/nltk/corpus/reader/api.py
+END
+util.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/gockie/!svn/ver/1/djangology/nltk/corpus/reader/util.py
+END
+dependency.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/gockie/!svn/ver/1/djangology/nltk/corpus/reader/dependency.py
+END
+ipipan.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/gockie/!svn/ver/1/djangology/nltk/corpus/reader/ipipan.py
+END
+chunked.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/gockie/!svn/ver/1/djangology/nltk/corpus/reader/chunked.py
+END
+ieer.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/gockie/!svn/ver/1/djangology/nltk/corpus/reader/ieer.py
+END
+nombank.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/gockie/!svn/ver/1/djangology/nltk/corpus/reader/nombank.py
+END
+timit.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/gockie/!svn/ver/1/djangology/nltk/corpus/reader/timit.py
+END
+cmudict.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/gockie/!svn/ver/1/djangology/nltk/corpus/reader/cmudict.py
+END
+bnc.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/gockie/!svn/ver/1/djangology/nltk/corpus/reader/bnc.py
+END
+indian.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/gockie/!svn/ver/1/djangology/nltk/corpus/reader/indian.py
+END
+string_category.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/gockie/!svn/ver/1/djangology/nltk/corpus/reader/string_category.py
+END
+pl196x.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/gockie/!svn/ver/1/djangology/nltk/corpus/reader/pl196x.py
+END
+plaintext.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/gockie/!svn/ver/1/djangology/nltk/corpus/reader/plaintext.py
+END
+switchboard.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/gockie/!svn/ver/1/djangology/nltk/corpus/reader/switchboard.py
+END
+propbank.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/gockie/!svn/ver/1/djangology/nltk/corpus/reader/propbank.py
+END
+senseval.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/gockie/!svn/ver/1/djangology/nltk/corpus/reader/senseval.py
+END
+sinica_treebank.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/gockie/!svn/ver/1/djangology/nltk/corpus/reader/sinica_treebank.py
+END
+wordnet.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/gockie/!svn/ver/1/djangology/nltk/corpus/reader/wordnet.py
+END
+toolbox.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/gockie/!svn/ver/1/djangology/nltk/corpus/reader/toolbox.py
+END

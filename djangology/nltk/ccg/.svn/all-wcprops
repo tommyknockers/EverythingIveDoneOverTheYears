@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svnroot/gockie/!svn/ver/1/djangology/nltk/ccg
+END
+api.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/gockie/!svn/ver/1/djangology/nltk/ccg/api.py
+END
+combinator.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/gockie/!svn/ver/1/djangology/nltk/ccg/combinator.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/gockie/!svn/ver/1/djangology/nltk/ccg/__init__.py
+END
+chart.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/gockie/!svn/ver/1/djangology/nltk/ccg/chart.py
+END
+lexicon.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/gockie/!svn/ver/1/djangology/nltk/ccg/lexicon.py
+END

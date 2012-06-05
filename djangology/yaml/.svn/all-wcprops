@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svnroot/gockie/!svn/ver/1/djangology/yaml
+END
+scanner.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/gockie/!svn/ver/1/djangology/yaml/scanner.py
+END
+error.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/gockie/!svn/ver/1/djangology/yaml/error.py
+END
+parser.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/gockie/!svn/ver/1/djangology/yaml/parser.py
+END
+dumper.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/gockie/!svn/ver/1/djangology/yaml/dumper.py
+END
+representer.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/gockie/!svn/ver/1/djangology/yaml/representer.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/gockie/!svn/ver/1/djangology/yaml/__init__.py
+END
+resolver.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/gockie/!svn/ver/1/djangology/yaml/resolver.py
+END
+reader.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/gockie/!svn/ver/1/djangology/yaml/reader.py
+END
+tokens.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/gockie/!svn/ver/1/djangology/yaml/tokens.py
+END
+events.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/gockie/!svn/ver/1/djangology/yaml/events.py
+END
+cyaml.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/gockie/!svn/ver/1/djangology/yaml/cyaml.py
+END
+loader.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/gockie/!svn/ver/1/djangology/yaml/loader.py
+END
+nodes.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/gockie/!svn/ver/1/djangology/yaml/nodes.py
+END
+serializer.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/gockie/!svn/ver/1/djangology/yaml/serializer.py
+END
+emitter.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/gockie/!svn/ver/1/djangology/yaml/emitter.py
+END
+constructor.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/gockie/!svn/ver/1/djangology/yaml/constructor.py
+END
+composer.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/gockie/!svn/ver/1/djangology/yaml/composer.py
+END

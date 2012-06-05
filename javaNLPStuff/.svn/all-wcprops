@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svnroot/gockie/!svn/ver/24/abner
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svnroot/gockie/!svn/ver/4/abner/.classpath
+END
+params.txt
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svnroot/gockie/!svn/ver/15/abner/params.txt
+END
+mallet-deps.jar
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/gockie/!svn/ver/4/abner/mallet-deps.jar
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svnroot/gockie/!svn/ver/1/abner/.project
+END
+abnerInput.txt
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/gockie/!svn/ver/1/abner/abnerInput.txt
+END
+abnerOutput.txt
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/gockie/!svn/ver/1/abner/abnerOutput.txt
+END
+junit-4.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svnroot/gockie/!svn/ver/4/abner/junit-4.5.jar
+END
+mallet.jar
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svnroot/gockie/!svn/ver/4/abner/mallet.jar
+END
+docToBeAnnotated.txt
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/gockie/!svn/ver/1/abner/docToBeAnnotated.txt
+END
+tags.txt
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svnroot/gockie/!svn/ver/24/abner/tags.txt
+END
+model.txt
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svnroot/gockie/!svn/ver/24/abner/model.txt
+END

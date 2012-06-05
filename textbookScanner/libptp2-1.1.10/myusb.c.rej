@@ -1,0 +1,11 @@
+--- myusb.c	2005-09-07 14:28:44.000000000 +0200
++++ myusb.c	2009-10-10 18:50:36.000000000 +0200
+@@ -16,7 +16,7 @@
+  *  along with this program; if not, write to the Free Software
+  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+  */
+-#include <config.h>
++#include "config.h"
+ #ifdef LINUX_OS
+ 
+ /*

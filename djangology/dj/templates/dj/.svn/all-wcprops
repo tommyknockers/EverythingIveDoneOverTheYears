@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/gockie/!svn/ver/7/djangology/dj/templates/dj
+END
+docCompare.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/gockie/!svn/ver/6/djangology/dj/templates/dj/docCompare.html
+END
+stats.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/gockie/!svn/ver/6/djangology/dj/templates/dj/stats.html
+END
+project-list.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/gockie/!svn/ver/6/djangology/dj/templates/dj/project-list.html
+END
+annotator.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/gockie/!svn/ver/6/djangology/dj/templates/dj/annotator.html
+END
+doc.html
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/gockie/!svn/ver/6/djangology/dj/templates/dj/doc.html
+END
+statsAnnotationList.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/gockie/!svn/ver/6/djangology/dj/templates/dj/statsAnnotationList.html
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/gockie/!svn/ver/6/djangology/dj/templates/dj/index.html
+END
+login.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/gockie/!svn/ver/7/djangology/dj/templates/dj/login.html
+END
+logout.html
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/gockie/!svn/ver/6/djangology/dj/templates/dj/logout.html
+END
+project-edit.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/gockie/!svn/ver/6/djangology/dj/templates/dj/project-edit.html
+END
+base.html
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/gockie/!svn/ver/6/djangology/dj/templates/dj/base.html
+END

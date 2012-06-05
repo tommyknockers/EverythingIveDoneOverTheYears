@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/gockie/!svn/ver/1/djangology/nltk/chat
+END
+iesha.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/gockie/!svn/ver/1/djangology/nltk/chat/iesha.py
+END
+zen.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/gockie/!svn/ver/1/djangology/nltk/chat/zen.py
+END
+util.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/gockie/!svn/ver/1/djangology/nltk/chat/util.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/gockie/!svn/ver/1/djangology/nltk/chat/__init__.py
+END
+rude.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/gockie/!svn/ver/1/djangology/nltk/chat/rude.py
+END
+suntsu.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/gockie/!svn/ver/1/djangology/nltk/chat/suntsu.py
+END
+eliza.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/gockie/!svn/ver/1/djangology/nltk/chat/eliza.py
+END

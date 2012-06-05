@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svnroot/gockie/!svn/ver/1/djangology/nltk
+END
+help.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/gockie/!svn/ver/1/djangology/nltk/help.py
+END
+collocations.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/gockie/!svn/ver/1/djangology/nltk/collocations.py
+END
+book.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/gockie/!svn/ver/1/djangology/nltk/book.py
+END
+nltk.jar
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/gockie/!svn/ver/1/djangology/nltk/nltk.jar
+END
+downloader.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/gockie/!svn/ver/1/djangology/nltk/downloader.py
+END
+tree.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/gockie/!svn/ver/1/djangology/nltk/tree.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/gockie/!svn/ver/1/djangology/nltk/__init__.py
+END
+internals.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/gockie/!svn/ver/1/djangology/nltk/internals.py
+END
+containers.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/gockie/!svn/ver/1/djangology/nltk/containers.py
+END
+decorators.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/gockie/!svn/ver/1/djangology/nltk/decorators.py
+END
+evaluate.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/gockie/!svn/ver/1/djangology/nltk/evaluate.py
+END
+data.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/gockie/!svn/ver/1/djangology/nltk/data.py
+END
+lazyimport.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/gockie/!svn/ver/1/djangology/nltk/lazyimport.py
+END
+util.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/gockie/!svn/ver/1/djangology/nltk/util.py
+END
+olac.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/gockie/!svn/ver/1/djangology/nltk/olac.py
+END
+treetransforms.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/gockie/!svn/ver/1/djangology/nltk/treetransforms.py
+END
+probability.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/gockie/!svn/ver/1/djangology/nltk/probability.py
+END
+yamltags.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/gockie/!svn/ver/1/djangology/nltk/yamltags.py
+END
+compat.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/gockie/!svn/ver/1/djangology/nltk/compat.py
+END
+featstruct.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/gockie/!svn/ver/1/djangology/nltk/featstruct.py
+END
+text.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/gockie/!svn/ver/1/djangology/nltk/text.py
+END
+grammar.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/gockie/!svn/ver/1/djangology/nltk/grammar.py
+END
