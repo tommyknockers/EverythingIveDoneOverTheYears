@@ -1,5 +1,4 @@
 EverythingIveDoneOverTheYears
 =============================
 
-GO TO MY OTHER REPOS FOR EXAMPLE CODE. THIS IS MY UNORGANIZED BACKUP OF EVERYTHING.
-
+This is my unorganized repo of everything. I will be moving stuff into separate repos shortly.
